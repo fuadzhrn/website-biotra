@@ -221,7 +221,7 @@ section {
 }
 
 .btn-footer {
-    display: inline-block;
+    display: none;
     margin-top: 18px;
     background-color: var(--gold);
     color: var(--navy) !important;
@@ -1810,5 +1810,321 @@ section {
     .navbar-menu {
         left: 12px;
         right: 12px;
+    }
+}
+
+/* =========================
+   HOME MOBILE FIX - HERO FLOATING CARDS
+========================= */
+
+@media (max-width: 768px) {
+    .hero-visual {
+        width: 100%;
+    }
+
+    .hero-image-wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .hero-image-wrapper img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 26px;
+    }
+
+    .hero-floating-card,
+    .floating-top,
+    .floating-bottom {
+        position: static;
+        width: 100%;
+        transform: none;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 16px;
+        border-radius: 20px;
+        background-color: var(--white);
+        box-shadow: 0 16px 38px rgba(15, 23, 42, 0.1);
+        border: 1px solid rgba(229, 231, 235, 0.95);
+    }
+
+    .floating-icon {
+        width: 46px;
+        height: 46px;
+        flex: 0 0 46px;
+        border-radius: 15px;
+        font-size: 21px;
+    }
+
+    .hero-floating-card h4 {
+        font-size: 15px;
+        margin-bottom: 4px;
+    }
+
+    .hero-floating-card p {
+        font-size: 12.8px;
+        line-height: 1.45;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-image-wrapper img {
+        height: 260px;
+        border-radius: 24px;
+    }
+
+    .hero-floating-card,
+    .floating-top,
+    .floating-bottom {
+        padding: 14px;
+        border-radius: 18px;
+    }
+
+    .floating-icon {
+        width: 42px;
+        height: 42px;
+        flex: 0 0 42px;
+        font-size: 19px;
+    }
+
+    .hero-floating-card h4 {
+        font-size: 14px;
+    }
+
+    .hero-floating-card p {
+        font-size: 12px;
+    }
+}
+
+/* =========================
+   HOME MOBILE FIX - ABOUT SECTION
+========================= */
+
+@media (max-width: 768px) {
+    .about-short-visual,
+    .about-image-wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .about-short-visual img,
+    .about-image-wrapper img,
+    .about-short-image img {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        border-radius: 26px;
+    }
+
+    .about-floating-card,
+    .about-card,
+    .about-short-card {
+        position: static;
+        width: 100%;
+        transform: none;
+        padding: 16px;
+        border-radius: 20px;
+        background-color: var(--white);
+        box-shadow: 0 16px 38px rgba(15, 23, 42, 0.1);
+        border: 1px solid rgba(229, 231, 235, 0.95);
+    }
+}
+
+@media (max-width: 480px) {
+    .about-short-visual img,
+    .about-image-wrapper img,
+    .about-short-image img {
+        height: 250px;
+        border-radius: 24px;
+    }
+
+    .about-floating-card,
+    .about-card,
+    .about-short-card {
+        padding: 14px;
+        border-radius: 18px;
+    }
+}
+
+/* =========================
+   FOOTER MOBILE ONLY
+   Tidak mengubah desktop/laptop
+========================= */
+
+@media (max-width: 768px) {
+    .site-footer {
+        padding: 54px 0 24px;
+        background-color: var(--navy);
+    }
+
+    .site-footer .footer-grid {
+        display: grid;
+        grid-template-columns: 1fr !important;
+        gap: 30px;
+    }
+
+    .footer-about {
+        padding-bottom: 4px;
+    }
+
+    .footer-about h3 {
+        color: var(--white);
+        font-size: 26px;
+        font-weight: 800;
+        margin-bottom: 14px;
+        letter-spacing: -0.4px;
+    }
+
+    .footer-about p {
+        max-width: 100%;
+        color: rgba(255, 255, 255, 0.72);
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+    .footer-column h4 {
+        color: var(--white);
+        font-size: 17px;
+        font-weight: 800;
+        margin-bottom: 16px;
+    }
+
+    .footer-column ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px 18px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .footer-column ul li,
+    .footer-column ul li a {
+        color: rgba(255, 255, 255, 0.72);
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .footer-column ul li a {
+        display: inline-flex;
+        transition: 0.25s ease;
+    }
+
+    .footer-column ul li a:hover {
+        color: var(--gold);
+    }
+
+    .footer-column p {
+        color: rgba(255, 255, 255, 0.72);
+        font-size: 14px;
+        line-height: 1.75;
+        margin-bottom: 16px;
+    }
+
+    .btn-footer {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 48px;
+        padding: 0 22px;
+        border-radius: 999px;
+        background-color: var(--gold);
+        color: var(--navy);
+        font-size: 13.5px;
+        font-weight: 800;
+        box-shadow: 0 14px 28px rgba(214, 164, 58, 0.22);
+    }
+
+    .footer-bottom {
+        margin-top: 34px;
+        padding: 20px 20px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+        text-align: center;
+    }
+
+    .footer-bottom p {
+        color: rgba(255, 255, 255, 0.58);
+        font-size: 13px;
+        line-height: 1.6;
+        margin: 0;
+    }
+}
+
+/* =========================
+   FOOTER SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+    .site-footer {
+        padding: 48px 0 22px;
+    }
+
+    .site-footer .footer-grid {
+        gap: 28px;
+    }
+
+    .footer-about h3 {
+        font-size: 24px;
+    }
+
+    .footer-about p {
+        font-size: 13.5px;
+    }
+
+    .footer-column ul {
+        grid-template-columns: 1fr;
+        gap: 9px;
+    }
+
+    .footer-column ul li,
+    .footer-column ul li a {
+        font-size: 13.5px;
+    }
+
+    .footer-column h4 {
+        font-size: 16px;
+        margin-bottom: 13px;
+    }
+
+    .btn-footer {
+        width: 100%;
+    }
+}
+
+/* Default: desktop & laptop disembunyikan */
+.btn-footer {
+    display: none;
+}
+
+/* Mobile: tampilkan tombol */
+@media (max-width: 768px) {
+    .btn-footer {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 48px;
+        padding: 0 22px;
+        border-radius: 999px;
+        background-color: var(--gold);
+        color: var(--navy);
+        font-size: 13.5px;
+        font-weight: 800;
+        box-shadow: 0 14px 28px rgba(214, 164, 58, 0.22);
+    }
+}
+
+@media (max-width: 480px) {
+    .btn-footer {
+        width: 100%;
     }
 }

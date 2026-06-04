@@ -1487,3 +1487,1463 @@
     font-size: 13px;
     line-height: 1.6;
 }
+
+/* =========================
+   PARTNERSHIP PAGE - LAPTOP VIEW
+   1024px - 1440px
+========================= */
+
+@media (max-width: 1440px) {
+    .container {
+        max-width: 1120px;
+    }
+
+    /* =========================
+       PAGE HEADER
+    ========================= */
+
+    .partnership-page-header {
+        min-height: 330px;
+        padding: 60px 0 68px;
+    }
+
+    .partnership-breadcrumb {
+        margin-bottom: 22px;
+        padding: 8px 14px;
+        font-size: 12.5px;
+    }
+
+    .partnership-header-label {
+        padding: 8px 15px;
+        margin-bottom: 17px;
+        font-size: 13px;
+    }
+
+    .partnership-page-header-content h1 {
+        max-width: 760px;
+        font-size: 40px;
+        line-height: 1.12;
+        letter-spacing: -1.1px;
+        margin-bottom: 18px;
+    }
+
+    .partnership-page-header-content p {
+        max-width: 720px;
+        font-size: 14.5px;
+        line-height: 1.78;
+        margin-bottom: 20px;
+    }
+
+    .partnership-header-note {
+        max-width: 680px;
+        padding: 14px 16px;
+        border-radius: 18px;
+    }
+
+    .partnership-header-note span {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    /* =========================
+       SECTION SPACING
+    ========================= */
+
+    .industry-opportunity-section,
+    .partnership-workflow-section,
+    .partner-benefits-section,
+    .partnership-pricing-section,
+    .financial-simulation-section,
+    .partnership-final-cta-section {
+        padding: 88px 0;
+    }
+
+    /* =========================
+       INDUSTRY OPPORTUNITY
+    ========================= */
+
+    .industry-opportunity-container {
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 46px;
+    }
+
+    .industry-content {
+        max-width: 520px;
+    }
+
+    .partnership-section-label {
+        padding: 8px 15px;
+        margin-bottom: 20px;
+        font-size: 12.5px;
+    }
+
+    .industry-content h2,
+    .workflow-header h2,
+    .benefits-header h2,
+    .pricing-header h2,
+    .simulation-header h2 {
+        font-size: 36px;
+        line-height: 1.16;
+        letter-spacing: -0.9px;
+    }
+
+    .industry-content p,
+    .workflow-header p,
+    .benefits-header p,
+    .pricing-header p,
+    .simulation-header p {
+        font-size: 14.5px;
+        line-height: 1.75;
+    }
+
+    .industry-points {
+        gap: 12px;
+        margin-top: 26px;
+    }
+
+    .industry-point {
+        padding: 13px 14px;
+        border-radius: 17px;
+    }
+
+    .industry-point span {
+        font-size: 13px;
+    }
+
+    .industry-chart-wrapper {
+        gap: 18px;
+    }
+
+    .industry-chart-card {
+        min-height: 340px;
+        padding: 24px;
+        border-radius: 26px;
+    }
+
+    .chart-card-header h3 {
+        font-size: 18px;
+    }
+
+    .chart-card-header i {
+        width: 44px;
+        height: 44px;
+        flex: 0 0 44px;
+        font-size: 21px;
+        border-radius: 15px;
+    }
+
+    .industry-chart-card p {
+        font-size: 13px;
+        line-height: 1.65;
+        margin-bottom: 18px;
+    }
+
+    .chart-box {
+        height: 190px;
+    }
+
+    .industry-chart-note {
+        padding: 15px 18px;
+        border-radius: 18px;
+    }
+
+    .industry-chart-note span {
+        font-size: 13px;
+    }
+
+    /* =========================
+       WORKFLOW SECTION
+    ========================= */
+
+    .workflow-header {
+        max-width: 760px;
+        margin-bottom: 50px;
+    }
+
+    .workflow-timeline {
+        gap: 16px;
+    }
+
+    .workflow-line {
+        top: 33px;
+        left: 8%;
+        right: 8%;
+    }
+
+    .workflow-number {
+        width: 66px;
+        height: 66px;
+        font-size: 17px;
+        border-radius: 20px;
+        margin-bottom: 22px;
+    }
+
+    .workflow-card {
+        height: 330px;
+        padding: 24px 18px;
+        border-radius: 24px;
+    }
+
+    .workflow-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 22px;
+        border-radius: 16px;
+        margin-bottom: 18px;
+    }
+
+    .workflow-card h3 {
+        font-size: 16px;
+        line-height: 1.35;
+        min-height: 66px;
+        margin-bottom: 12px;
+    }
+
+    .workflow-card p {
+        font-size: 12.8px;
+        line-height: 1.65;
+    }
+
+    /* =========================
+       BENEFIT MITRA
+    ========================= */
+
+    .benefits-header {
+        max-width: 760px;
+        margin-bottom: 46px;
+    }
+
+    .benefits-grid {
+        gap: 18px;
+    }
+
+    .benefit-card {
+        min-height: 245px;
+        padding: 26px 20px;
+        border-radius: 26px;
+    }
+
+    .benefit-icon {
+        width: 52px;
+        height: 52px;
+        font-size: 24px;
+        border-radius: 17px;
+        margin-bottom: 20px;
+    }
+
+    .benefit-card h3 {
+        font-size: 17px;
+        line-height: 1.32;
+        min-height: 48px;
+        margin-bottom: 12px;
+    }
+
+    .benefit-card p {
+        font-size: 13px;
+        line-height: 1.68;
+    }
+
+    /* =========================
+       PRICING SECTION
+    ========================= */
+
+    .pricing-header {
+        max-width: 760px;
+        margin-bottom: 50px;
+    }
+
+    .pricing-grid {
+        gap: 22px;
+    }
+
+    .pricing-card {
+        min-height: 540px;
+        padding: 30px 24px;
+        border-radius: 28px;
+    }
+
+    .pricing-card-featured {
+        transform: translateY(-10px);
+    }
+
+    .pricing-card-featured:hover {
+        transform: translateY(-16px);
+    }
+
+    .pricing-badge {
+        padding: 7px 12px;
+        margin-bottom: 18px;
+        font-size: 11px;
+    }
+
+    .pricing-card h3 {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
+    .pricing-card-top p {
+        font-size: 13px;
+        line-height: 1.7;
+        min-height: 90px;
+    }
+
+    .pricing-price {
+        margin: 24px 0 24px;
+        padding-bottom: 24px;
+    }
+
+    .pricing-price span {
+        font-size: 16px;
+    }
+
+    .pricing-price strong {
+        font-size: 28px;
+    }
+
+    .pricing-list {
+        gap: 13px;
+        margin-bottom: 26px;
+    }
+
+    .pricing-list li {
+        font-size: 13px;
+        line-height: 1.55;
+    }
+
+    .pricing-button {
+        min-height: 50px;
+        font-size: 13.5px;
+    }
+
+    .pricing-note {
+        margin-top: 30px;
+        padding: 16px 20px;
+        border-radius: 20px;
+    }
+
+    .pricing-note span {
+        font-size: 13px;
+    }
+
+    /* =========================
+       FINANCIAL SIMULATION
+    ========================= */
+
+    .simulation-header {
+        max-width: 800px;
+        margin-bottom: 50px;
+    }
+
+    .simulation-grid {
+        gap: 22px;
+    }
+
+    .simulation-card {
+        padding: 30px;
+        border-radius: 28px;
+    }
+
+    .simulation-card-header {
+        gap: 16px;
+        margin-bottom: 24px;
+    }
+
+    .simulation-icon {
+        width: 56px;
+        height: 56px;
+        flex: 0 0 56px;
+        font-size: 25px;
+        border-radius: 18px;
+    }
+
+    .simulation-card-header h3 {
+        font-size: 22px;
+    }
+
+    .simulation-details {
+        gap: 12px;
+        margin-bottom: 24px;
+    }
+
+    .simulation-row {
+        padding: 13px 14px;
+        border-radius: 16px;
+    }
+
+    .simulation-row span,
+    .simulation-row strong {
+        font-size: 13px;
+    }
+
+    .simulation-result {
+        padding: 22px;
+        border-radius: 22px;
+    }
+
+    .simulation-result strong {
+        font-size: 28px;
+    }
+
+    .simulation-highlight {
+        padding: 32px 36px;
+        border-radius: 28px;
+        gap: 34px;
+    }
+
+    .simulation-highlight-content h3 {
+        font-size: 34px;
+    }
+
+    .simulation-highlight-content p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .simulation-highlight-icon {
+        width: 74px;
+        height: 74px;
+        flex: 0 0 74px;
+        font-size: 32px;
+        border-radius: 24px;
+    }
+
+    .simulation-disclaimer {
+        padding: 16px 20px;
+        border-radius: 20px;
+    }
+
+    .simulation-disclaimer span {
+        font-size: 13px;
+    }
+
+    /* =========================
+       FINAL CTA
+    ========================= */
+
+    .partnership-final-cta {
+        padding: 38px 42px;
+        border-radius: 30px;
+        gap: 36px;
+    }
+
+    .partnership-final-cta-label {
+        padding: 8px 15px;
+        margin-bottom: 16px;
+        font-size: 12.5px;
+    }
+
+    .partnership-final-cta-content h2 {
+        font-size: 32px;
+        line-height: 1.22;
+    }
+
+    .partnership-final-cta-content p {
+        font-size: 14.5px;
+        line-height: 1.75;
+    }
+
+    .partnership-final-cta-actions {
+        flex: 0 0 250px;
+    }
+
+    .partnership-final-cta-button {
+        min-height: 52px;
+        padding: 0 24px;
+        font-size: 13.5px;
+    }
+}
+
+/* =========================
+   PARTNERSHIP PAGE - SMALL LAPTOP
+   1024px - 1200px
+========================= */
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    /* Page Header */
+
+    .partnership-page-header {
+        min-height: 310px;
+        padding: 54px 0 62px;
+    }
+
+    .partnership-page-header-content h1 {
+        max-width: 700px;
+        font-size: 36px;
+    }
+
+    .partnership-page-header-content p {
+        max-width: 680px;
+        font-size: 14px;
+    }
+
+    /* Section spacing */
+
+    .industry-opportunity-section,
+    .partnership-workflow-section,
+    .partner-benefits-section,
+    .partnership-pricing-section,
+    .financial-simulation-section,
+    .partnership-final-cta-section {
+        padding: 78px 0;
+    }
+
+    /* Industry Opportunity */
+
+    .industry-opportunity-container {
+        gap: 34px;
+    }
+
+    .industry-content h2,
+    .workflow-header h2,
+    .benefits-header h2,
+    .pricing-header h2,
+    .simulation-header h2 {
+        font-size: 32px;
+    }
+
+    .industry-content p,
+    .workflow-header p,
+    .benefits-header p,
+    .pricing-header p,
+    .simulation-header p {
+        font-size: 14px;
+    }
+
+    .industry-chart-wrapper {
+        gap: 14px;
+    }
+
+    .industry-chart-card {
+        min-height: 320px;
+        padding: 22px;
+    }
+
+    .chart-box {
+        height: 175px;
+    }
+
+    .chart-card-header h3 {
+        font-size: 16px;
+    }
+
+    /* Workflow */
+
+    .workflow-timeline {
+        gap: 12px;
+    }
+
+    .workflow-number {
+        width: 58px;
+        height: 58px;
+        font-size: 15px;
+        border-radius: 18px;
+        margin-bottom: 18px;
+    }
+
+    .workflow-line {
+        top: 29px;
+    }
+
+    .workflow-card {
+        height: 330px;
+        padding: 22px 15px;
+        border-radius: 22px;
+    }
+
+    .workflow-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 20px;
+        border-radius: 15px;
+        margin-bottom: 16px;
+    }
+
+    .workflow-card h3 {
+        font-size: 15px;
+        min-height: 62px;
+    }
+
+    .workflow-card p {
+        font-size: 12.3px;
+        line-height: 1.6;
+    }
+
+    /* Benefits */
+
+    .benefits-grid {
+        gap: 16px;
+    }
+
+    .benefit-card {
+        min-height: 235px;
+        padding: 24px 18px;
+    }
+
+    .benefit-card h3 {
+        font-size: 16px;
+    }
+
+    .benefit-card p {
+        font-size: 12.6px;
+    }
+
+    /* Pricing */
+
+    .pricing-grid {
+        gap: 18px;
+    }
+
+    .pricing-card {
+        min-height: 530px;
+        padding: 28px 20px;
+    }
+
+    .pricing-card h3 {
+        font-size: 20px;
+    }
+
+    .pricing-card-top p,
+    .pricing-list li {
+        font-size: 12.6px;
+    }
+
+    .pricing-price strong {
+        font-size: 25px;
+    }
+
+    /* Simulation */
+
+    .simulation-card {
+        padding: 28px 24px;
+    }
+
+    .simulation-card-header h3 {
+        font-size: 20px;
+    }
+
+    .simulation-result strong {
+        font-size: 25px;
+    }
+
+    .simulation-highlight {
+        padding: 30px 32px;
+    }
+
+    .simulation-highlight-content h3 {
+        font-size: 30px;
+    }
+
+    /* CTA */
+
+    .partnership-final-cta {
+        padding: 34px 36px;
+    }
+
+    .partnership-final-cta-content h2 {
+        font-size: 29px;
+    }
+
+    .partnership-final-cta-actions {
+        flex: 0 0 230px;
+    }
+}
+/* =========================
+   PARTNERSHIP PAGE - MOBILE VIEW
+   max 768px
+========================= */
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* =========================
+       PAGE HEADER
+    ========================= */
+
+    .partnership-page-header {
+        min-height: auto;
+        padding: 56px 0 64px;
+    }
+
+    .partnership-breadcrumb {
+        margin-bottom: 20px;
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+
+    .partnership-header-label {
+        padding: 8px 14px;
+        margin-bottom: 18px;
+        font-size: 12px;
+    }
+
+    .partnership-page-header-content {
+        max-width: 100%;
+    }
+
+    .partnership-page-header-content h1 {
+        max-width: 100%;
+        font-size: 32px;
+        line-height: 1.16;
+        letter-spacing: -0.8px;
+        margin-bottom: 18px;
+    }
+
+    .partnership-page-header-content p {
+        max-width: 100%;
+        font-size: 14.2px;
+        line-height: 1.75;
+        margin-bottom: 20px;
+    }
+
+    .partnership-header-note {
+        max-width: 100%;
+        padding: 14px 16px;
+        border-radius: 18px;
+    }
+
+    .partnership-header-note i {
+        font-size: 18px;
+    }
+
+    .partnership-header-note span {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    /* =========================
+       SECTION GENERAL
+    ========================= */
+
+    .industry-opportunity-section,
+    .partnership-workflow-section,
+    .partner-benefits-section,
+    .partnership-pricing-section,
+    .financial-simulation-section,
+    .partnership-final-cta-section {
+        padding: 70px 0;
+    }
+
+    .partnership-section-label,
+    .section-label-dark {
+        padding: 8px 14px;
+        margin-bottom: 18px;
+        font-size: 12px;
+    }
+
+    .industry-content h2,
+    .workflow-header h2,
+    .benefits-header h2,
+    .pricing-header h2,
+    .simulation-header h2 {
+        font-size: 30px;
+        line-height: 1.18;
+        letter-spacing: -0.7px;
+        margin: 18px 0 14px;
+    }
+
+    .industry-content p,
+    .workflow-header p,
+    .benefits-header p,
+    .pricing-header p,
+    .simulation-header p {
+        font-size: 14.2px;
+        line-height: 1.75;
+    }
+
+    /* =========================
+       INDUSTRY OPPORTUNITY
+    ========================= */
+
+    .industry-opportunity-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .industry-content {
+        max-width: 100%;
+    }
+
+    .industry-points {
+        gap: 12px;
+        margin-top: 24px;
+    }
+
+    .industry-point {
+        padding: 14px 15px;
+        border-radius: 17px;
+        gap: 11px;
+    }
+
+    .industry-point i {
+        font-size: 19px;
+    }
+
+    .industry-point span {
+        font-size: 13px;
+        line-height: 1.55;
+    }
+
+    .industry-chart-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .industry-chart-card {
+        min-height: auto;
+        padding: 24px 22px;
+        border-radius: 26px;
+    }
+
+    .chart-card-header {
+        gap: 16px;
+        margin-bottom: 14px;
+    }
+
+    .chart-card-header span {
+        font-size: 11.5px;
+    }
+
+    .chart-card-header h3 {
+        font-size: 19px;
+        line-height: 1.3;
+    }
+
+    .chart-card-header i {
+        width: 44px;
+        height: 44px;
+        flex: 0 0 44px;
+        font-size: 21px;
+        border-radius: 15px;
+    }
+
+    .industry-chart-card p {
+        font-size: 13px;
+        line-height: 1.65;
+        margin-bottom: 18px;
+    }
+
+    .chart-box {
+        height: 220px;
+    }
+
+    .industry-chart-note {
+        padding: 16px 18px;
+        border-radius: 18px;
+    }
+
+    .industry-chart-note i {
+        font-size: 19px;
+    }
+
+    .industry-chart-note span {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    /* =========================
+       WORKFLOW SECTION
+    ========================= */
+
+    .workflow-header {
+        max-width: 100%;
+        margin-bottom: 38px;
+        text-align: left;
+    }
+
+    .workflow-header p {
+        margin: 0;
+    }
+
+    .workflow-timeline {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .workflow-line {
+        display: none;
+    }
+
+    .workflow-step {
+        display: grid;
+        grid-template-columns: 64px 1fr;
+        gap: 16px;
+        align-items: stretch;
+    }
+
+    .workflow-number {
+        width: 58px;
+        height: 58px;
+        margin: 0;
+        border-radius: 18px;
+        font-size: 15px;
+        align-self: flex-start;
+    }
+
+    .workflow-card {
+        height: auto;
+        min-height: auto;
+        padding: 24px 22px;
+        border-radius: 24px;
+    }
+
+    .workflow-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 22px;
+        border-radius: 16px;
+        margin-bottom: 18px;
+    }
+
+    .workflow-card h3 {
+        font-size: 19px;
+        line-height: 1.32;
+        min-height: auto;
+        margin-bottom: 12px;
+    }
+
+    .workflow-card p {
+        font-size: 13.5px;
+        line-height: 1.68;
+    }
+
+    /* =========================
+       PARTNER BENEFITS
+    ========================= */
+
+    .benefits-header {
+        max-width: 100%;
+        margin-bottom: 36px;
+        text-align: left;
+    }
+
+    .benefits-header p {
+        margin: 0;
+    }
+
+    .benefits-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .benefit-card {
+        min-height: auto;
+        padding: 26px 22px;
+        border-radius: 26px;
+    }
+
+    .benefit-icon {
+        width: 52px;
+        height: 52px;
+        font-size: 24px;
+        border-radius: 17px;
+        margin-bottom: 20px;
+    }
+
+    .benefit-card h3 {
+        font-size: 20px;
+        line-height: 1.3;
+        min-height: auto;
+        margin-bottom: 12px;
+    }
+
+    .benefit-card p {
+        font-size: 13.8px;
+        line-height: 1.7;
+    }
+
+    /* =========================
+       PRICING
+    ========================= */
+
+    .pricing-header {
+        max-width: 100%;
+        margin-bottom: 38px;
+        text-align: left;
+    }
+
+    .pricing-header p {
+        margin: 0;
+    }
+
+    .pricing-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .pricing-card,
+    .pricing-card-featured {
+        min-height: auto;
+        padding: 28px 24px;
+        border-radius: 26px;
+        transform: none;
+    }
+
+    .pricing-card-featured:hover,
+    .pricing-card:hover {
+        transform: translateY(-6px);
+    }
+
+    .pricing-badge {
+        padding: 7px 12px;
+        margin-bottom: 18px;
+        font-size: 11px;
+    }
+
+    .pricing-card h3 {
+        font-size: 22px;
+        line-height: 1.28;
+        margin-bottom: 12px;
+    }
+
+    .pricing-card-top p {
+        font-size: 13.5px;
+        line-height: 1.7;
+        min-height: auto;
+    }
+
+    .pricing-price {
+        margin: 24px 0;
+        padding-bottom: 22px;
+    }
+
+    .pricing-price span {
+        font-size: 16px;
+        margin-top: 6px;
+    }
+
+    .pricing-price strong {
+        font-size: 28px;
+        line-height: 1.12;
+    }
+
+    .pricing-list {
+        gap: 13px;
+        margin-bottom: 26px;
+    }
+
+    .pricing-list li {
+        font-size: 13.5px;
+        line-height: 1.6;
+    }
+
+    .pricing-list i {
+        font-size: 17px;
+    }
+
+    .pricing-button {
+        min-height: 50px;
+        font-size: 13.5px;
+    }
+
+    .pricing-note {
+        margin-top: 24px;
+        padding: 16px 18px;
+        border-radius: 18px;
+    }
+
+    .pricing-note i {
+        font-size: 19px;
+    }
+
+    .pricing-note span {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    /* =========================
+       FINANCIAL SIMULATION
+    ========================= */
+
+    .simulation-header {
+        max-width: 100%;
+        margin-bottom: 38px;
+        text-align: left;
+    }
+
+    .simulation-header p {
+        margin: 0;
+    }
+
+    .simulation-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .simulation-card {
+        padding: 28px 24px;
+        border-radius: 26px;
+    }
+
+    .simulation-card-header {
+        gap: 16px;
+        align-items: flex-start;
+        margin-bottom: 24px;
+    }
+
+    .simulation-icon {
+        width: 54px;
+        height: 54px;
+        flex: 0 0 54px;
+        font-size: 24px;
+        border-radius: 18px;
+    }
+
+    .simulation-card-header span {
+        font-size: 12px;
+    }
+
+    .simulation-card-header h3 {
+        font-size: 21px;
+        line-height: 1.3;
+    }
+
+    .simulation-details {
+        gap: 12px;
+        margin-bottom: 24px;
+    }
+
+    .simulation-row {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 6px;
+        padding: 14px 15px;
+        border-radius: 16px;
+    }
+
+    .simulation-row span {
+        font-size: 13px;
+    }
+
+    .simulation-row strong {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .simulation-result {
+        padding: 22px;
+        border-radius: 22px;
+    }
+
+    .simulation-result span {
+        font-size: 12px;
+    }
+
+    .simulation-result strong {
+        display: block;
+        font-size: 27px;
+        margin-bottom: 4px;
+    }
+
+    .simulation-result small {
+        font-size: 13px;
+    }
+
+    .simulation-highlight {
+        margin-top: 24px;
+        padding: 28px 24px;
+        border-radius: 26px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .simulation-highlight-content {
+        max-width: 100%;
+    }
+
+    .simulation-highlight-content span {
+        font-size: 12px;
+    }
+
+    .simulation-highlight-content h3 {
+        font-size: 29px;
+        line-height: 1.18;
+    }
+
+    .simulation-highlight-content h3 small {
+        display: block;
+        margin-top: 4px;
+        font-size: 14px;
+    }
+
+    .simulation-highlight-content p {
+        font-size: 13.8px;
+        line-height: 1.7;
+    }
+
+    .simulation-highlight-icon {
+        width: 62px;
+        height: 62px;
+        flex: none;
+        font-size: 27px;
+        border-radius: 20px;
+    }
+
+    .simulation-disclaimer {
+        margin-top: 22px;
+        padding: 16px 18px;
+        border-radius: 18px;
+    }
+
+    .simulation-disclaimer i {
+        font-size: 19px;
+    }
+
+    .simulation-disclaimer span {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    /* =========================
+       FINAL CTA
+    ========================= */
+
+    .partnership-final-cta {
+        padding: 28px 24px;
+        border-radius: 26px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .partnership-final-cta-content {
+        max-width: 100%;
+    }
+
+    .partnership-final-cta-label {
+        padding: 8px 14px;
+        margin-bottom: 16px;
+        font-size: 12px;
+    }
+
+    .partnership-final-cta-content h2 {
+        font-size: 26px;
+        line-height: 1.24;
+        letter-spacing: -0.6px;
+        margin-bottom: 12px;
+    }
+
+    .partnership-final-cta-content p {
+        font-size: 14px;
+        line-height: 1.72;
+    }
+
+    .partnership-final-cta-actions {
+        flex: none;
+        width: 100%;
+    }
+
+    .partnership-final-cta-button {
+        width: 100%;
+        min-height: 52px;
+        padding: 0 22px;
+        font-size: 13.5px;
+        justify-content: center;
+    }
+
+    .partnership-final-cta-actions span {
+        font-size: 12.5px;
+        line-height: 1.6;
+    }
+}
+
+/* =========================
+   PARTNERSHIP PAGE - SMALL MOBILE
+   max 480px
+========================= */
+
+@media (max-width: 480px) {
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    /* Page Header */
+
+    .partnership-page-header {
+        padding: 50px 0 58px;
+    }
+
+    .partnership-page-header-content h1 {
+        font-size: 28px;
+    }
+
+    .partnership-page-header-content p {
+        font-size: 13.8px;
+    }
+
+    .partnership-header-note {
+        padding: 13px 14px;
+        border-radius: 17px;
+    }
+
+    /* General */
+
+    .industry-opportunity-section,
+    .partnership-workflow-section,
+    .partner-benefits-section,
+    .partnership-pricing-section,
+    .financial-simulation-section,
+    .partnership-final-cta-section {
+        padding: 62px 0;
+    }
+
+    .industry-content h2,
+    .workflow-header h2,
+    .benefits-header h2,
+    .pricing-header h2,
+    .simulation-header h2 {
+        font-size: 26px;
+    }
+
+    .industry-content p,
+    .workflow-header p,
+    .benefits-header p,
+    .pricing-header p,
+    .simulation-header p {
+        font-size: 13.8px;
+    }
+
+    /* Industry */
+
+    .industry-opportunity-container {
+        gap: 30px;
+    }
+
+    .industry-chart-card {
+        padding: 22px 20px;
+        border-radius: 24px;
+    }
+
+    .chart-card-header h3 {
+        font-size: 17px;
+    }
+
+    .chart-box {
+        height: 200px;
+    }
+
+    /* Workflow */
+
+    .workflow-step {
+        grid-template-columns: 54px 1fr;
+        gap: 12px;
+    }
+
+    .workflow-number {
+        width: 50px;
+        height: 50px;
+        border-radius: 16px;
+        font-size: 13px;
+        border-width: 4px;
+    }
+
+    .workflow-card {
+        padding: 22px 18px;
+        border-radius: 22px;
+    }
+
+    .workflow-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 20px;
+        border-radius: 15px;
+    }
+
+    .workflow-card h3 {
+        font-size: 17px;
+    }
+
+    .workflow-card p {
+        font-size: 13px;
+    }
+
+    /* Benefits */
+
+    .benefit-card {
+        padding: 24px 20px;
+        border-radius: 24px;
+    }
+
+    .benefit-card h3 {
+        font-size: 18px;
+    }
+
+    .benefit-card p {
+        font-size: 13.3px;
+    }
+
+    /* Pricing */
+
+    .pricing-card,
+    .pricing-card-featured {
+        padding: 24px 20px;
+        border-radius: 24px;
+    }
+
+    .pricing-card h3 {
+        font-size: 20px;
+    }
+
+    .pricing-price strong {
+        font-size: 25px;
+    }
+
+    .pricing-card-top p,
+    .pricing-list li {
+        font-size: 13px;
+    }
+
+    /* Simulation */
+
+    .simulation-card {
+        padding: 24px 20px;
+        border-radius: 24px;
+    }
+
+    .simulation-card-header h3 {
+        font-size: 19px;
+    }
+
+    .simulation-result strong {
+        font-size: 24px;
+    }
+
+    .simulation-highlight {
+        padding: 24px 20px;
+        border-radius: 24px;
+    }
+
+    .simulation-highlight-content h3 {
+        font-size: 25px;
+    }
+
+    /* CTA */
+
+    .partnership-final-cta {
+        padding: 24px 20px;
+        border-radius: 24px;
+    }
+
+    .partnership-final-cta-content h2 {
+        font-size: 23px;
+    }
+
+    .partnership-final-cta-content p {
+        font-size: 13.6px;
+    }
+}

@@ -12,11 +12,10 @@
         <div class="footer-column">
             <h4>Menu Cepat</h4>
             <ul>
-                <li><a href="{{ route('home') }}">Beranda</a></li>
-                <li><a href="#">Tentang Kami</a></li>
-                <li><a href="#">Produk & Layanan</a></li>
-                <li><a href="#">Kemitraan</a></li>
-                <li><a href="#">Kontak</a></li>
+               <li><a href="{{ route('about') }}">Tentang Kami</a></li>
+                <li><a href="{{ route('products-services') }}">Produk & Layanan</a></li>
+                <li><a href="{{ route('partnership') }}">Kemitraan</a></li>
+                <li><a href="{{ route('contact') }}">Kontak</a></li>
             </ul>
         </div>
 

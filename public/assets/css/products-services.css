@@ -586,3 +586,643 @@
 .products-final-cta-button:hover i {
     transform: translateX(4px);
 }
+
+/* =========================
+   PRODUCTS & SERVICES PAGE - LAPTOP VIEW
+   1024px - 1440px
+========================= */
+
+@media (max-width: 1440px) {
+    .container {
+        max-width: 1120px;
+    }
+
+    /* =========================
+       PAGE HEADER
+    ========================= */
+
+    .products-page-header {
+        min-height: 330px;
+        padding: 60px 0 68px;
+    }
+
+    .products-breadcrumb {
+        margin-bottom: 22px;
+        padding: 8px 14px;
+        font-size: 12.5px;
+    }
+
+    .products-header-label {
+        padding: 8px 15px;
+        margin-bottom: 17px;
+        font-size: 13px;
+    }
+
+    .products-page-header-content h1 {
+        max-width: 760px;
+        font-size: 40px;
+        line-height: 1.12;
+        letter-spacing: -1.1px;
+        margin-bottom: 18px;
+    }
+
+    .products-page-header-content p {
+        max-width: 720px;
+        font-size: 14.5px;
+        line-height: 1.78;
+        margin-bottom: 20px;
+    }
+
+    .products-header-note {
+        max-width: 680px;
+        padding: 14px 16px;
+        border-radius: 18px;
+    }
+
+    .products-header-note span {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    /* =========================
+       SERVICE SECTION GENERAL
+    ========================= */
+
+    .service-section {
+        padding: 88px 0;
+    }
+
+    .service-container,
+    .service-container-reverse {
+        gap: 48px;
+        align-items: center;
+    }
+
+    .service-content {
+        max-width: 520px;
+    }
+
+    .service-label {
+        padding: 8px 15px;
+        margin-bottom: 20px;
+        font-size: 12.5px;
+    }
+
+    .service-content h2 {
+        font-size: 36px;
+        line-height: 1.16;
+        letter-spacing: -0.9px;
+        margin-bottom: 20px;
+    }
+
+    .service-description {
+        font-size: 14.5px;
+        line-height: 1.75;
+        margin-bottom: 16px;
+    }
+
+    /* =========================
+       BENEFIT LIST
+    ========================= */
+
+    .service-benefits {
+        gap: 12px;
+        margin: 26px 0 30px;
+    }
+
+    .service-benefit-item {
+        padding: 13px 14px;
+        border-radius: 17px;
+        gap: 11px;
+    }
+
+    .service-benefit-item i {
+        font-size: 19px;
+    }
+
+    .service-benefit-item span {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    /* =========================
+       CTA BUTTON
+    ========================= */
+
+    .service-cta {
+        min-height: 50px;
+        padding: 0 22px;
+        font-size: 13.5px;
+    }
+
+    /* =========================
+       MINI GALLERY
+    ========================= */
+
+    .gallery-main {
+        height: 360px;
+        border-radius: 28px;
+    }
+
+    .gallery-badge {
+        left: 22px;
+        bottom: 22px;
+        padding: 9px 14px;
+        font-size: 12px;
+    }
+
+    .gallery-thumbs {
+        gap: 14px;
+        margin-top: 14px;
+    }
+
+    .gallery-thumb {
+        height: 105px;
+        border-radius: 20px;
+    }
+
+    /* =========================
+       FINAL CTA
+    ========================= */
+
+    .products-final-cta-section {
+        padding: 88px 0 96px;
+    }
+
+    .products-final-cta {
+        padding: 38px 42px;
+        border-radius: 30px;
+        gap: 36px;
+    }
+
+    .products-final-cta-label {
+        padding: 8px 15px;
+        margin-bottom: 16px;
+        font-size: 12.5px;
+    }
+
+    .products-final-cta-content h2 {
+        font-size: 32px;
+        line-height: 1.22;
+        margin-bottom: 12px;
+    }
+
+    .products-final-cta-content p {
+        font-size: 14.5px;
+        line-height: 1.75;
+    }
+
+    .products-final-cta-button {
+        min-height: 52px;
+        padding: 0 24px;
+        font-size: 13.5px;
+    }
+}
+
+/* =========================
+   PRODUCTS & SERVICES PAGE - SMALL LAPTOP
+   1024px - 1200px
+========================= */
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    /* Page Header */
+
+    .products-page-header {
+        min-height: 310px;
+        padding: 54px 0 62px;
+    }
+
+    .products-page-header-content h1 {
+        max-width: 700px;
+        font-size: 36px;
+    }
+
+    .products-page-header-content p {
+        max-width: 680px;
+        font-size: 14px;
+    }
+
+    /* Service Section */
+
+    .service-section {
+        padding: 78px 0;
+    }
+
+    .service-container,
+    .service-container-reverse {
+        gap: 36px;
+    }
+
+    .service-content {
+        max-width: 470px;
+    }
+
+    .service-content h2 {
+        font-size: 32px;
+        line-height: 1.18;
+    }
+
+    .service-description {
+        font-size: 14px;
+    }
+
+    .service-benefits {
+        margin: 24px 0 28px;
+    }
+
+    .service-benefit-item {
+        padding: 12px 13px;
+    }
+
+    .service-benefit-item span {
+        font-size: 12.8px;
+    }
+
+    /* Gallery */
+
+    .gallery-main {
+        height: 320px;
+        border-radius: 26px;
+    }
+
+    .gallery-thumb {
+        height: 92px;
+        border-radius: 18px;
+    }
+
+    .gallery-thumbs {
+        gap: 12px;
+    }
+
+    .gallery-badge {
+        left: 20px;
+        bottom: 20px;
+    }
+
+    /* Final CTA */
+
+    .products-final-cta-section {
+        padding: 78px 0 86px;
+    }
+
+    .products-final-cta {
+        padding: 34px 36px;
+        border-radius: 28px;
+        gap: 30px;
+    }
+
+    .products-final-cta-content h2 {
+        font-size: 29px;
+    }
+
+    .products-final-cta-content p {
+        font-size: 14px;
+    }
+}
+
+/* =========================
+   PRODUCTS & SERVICES PAGE - MOBILE VIEW
+   max 768px
+========================= */
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* =========================
+       PAGE HEADER
+    ========================= */
+
+    .products-page-header {
+        min-height: auto;
+        padding: 56px 0 64px;
+    }
+
+    .products-breadcrumb {
+        margin-bottom: 20px;
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+
+    .products-header-label {
+        padding: 8px 14px;
+        margin-bottom: 18px;
+        font-size: 12px;
+    }
+
+    .products-page-header-content {
+        max-width: 100%;
+    }
+
+    .products-page-header-content h1 {
+        max-width: 100%;
+        font-size: 32px;
+        line-height: 1.16;
+        letter-spacing: -0.8px;
+        margin-bottom: 18px;
+    }
+
+    .products-page-header-content p {
+        max-width: 100%;
+        font-size: 14.2px;
+        line-height: 1.75;
+        margin-bottom: 20px;
+    }
+
+    .products-header-note {
+        max-width: 100%;
+        padding: 14px 16px;
+        border-radius: 18px;
+    }
+
+    .products-header-note i {
+        font-size: 18px;
+    }
+
+    .products-header-note span {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    /* =========================
+       SERVICE SECTIONS
+    ========================= */
+
+    .service-section {
+        padding: 70px 0;
+    }
+
+    .service-container,
+    .service-container-reverse {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 34px;
+    }
+
+    /*
+       Untuk mobile:
+       semua section dibuat teks dulu, gallery setelahnya.
+       Walaupun di desktop Hotel/Rental gallery kiri,
+       di mobile lebih enak dibaca kalau konten teks muncul dulu.
+    */
+
+    .service-container-reverse .service-gallery {
+        order: 2;
+    }
+
+    .service-container-reverse .service-content {
+        order: 1;
+    }
+
+    .service-content {
+        max-width: 100%;
+    }
+
+    .service-label {
+        padding: 8px 14px;
+        margin-bottom: 18px;
+        font-size: 12px;
+    }
+
+    .service-content h2 {
+        font-size: 30px;
+        line-height: 1.18;
+        letter-spacing: -0.7px;
+        margin-bottom: 18px;
+    }
+
+    .service-description {
+        font-size: 14.2px;
+        line-height: 1.75;
+        margin-bottom: 15px;
+    }
+
+    /* =========================
+       BENEFITS
+    ========================= */
+
+    .service-benefits {
+        gap: 12px;
+        margin: 24px 0 28px;
+    }
+
+    .service-benefit-item {
+        padding: 14px 15px;
+        border-radius: 17px;
+        gap: 11px;
+    }
+
+    .service-benefit-item i {
+        font-size: 19px;
+        margin-top: 1px;
+    }
+
+    .service-benefit-item span {
+        font-size: 13px;
+        line-height: 1.55;
+    }
+
+    .service-cta {
+        width: 100%;
+        min-height: 50px;
+        padding: 0 20px;
+        font-size: 13.5px;
+        justify-content: center;
+    }
+
+    /* =========================
+       MINI GALLERY
+    ========================= */
+
+    .service-gallery {
+        width: 100%;
+    }
+
+    .gallery-main {
+        height: 300px;
+        border-radius: 26px;
+    }
+
+    .gallery-main img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .gallery-badge {
+        left: 18px;
+        bottom: 18px;
+        padding: 8px 13px;
+        font-size: 12px;
+    }
+
+    .gallery-thumbs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-top: 12px;
+    }
+
+    .gallery-thumb {
+        height: 90px;
+        border-radius: 18px;
+    }
+
+    .gallery-thumb img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* =========================
+       FINAL CTA
+    ========================= */
+
+    .products-final-cta-section {
+        padding: 70px 0 76px;
+    }
+
+    .products-final-cta {
+        padding: 28px 24px;
+        border-radius: 26px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .products-final-cta-content {
+        max-width: 100%;
+    }
+
+    .products-final-cta-label {
+        padding: 8px 14px;
+        margin-bottom: 16px;
+        font-size: 12px;
+    }
+
+    .products-final-cta-content h2 {
+        font-size: 26px;
+        line-height: 1.24;
+        letter-spacing: -0.6px;
+        margin-bottom: 12px;
+    }
+
+    .products-final-cta-content p {
+        font-size: 14px;
+        line-height: 1.72;
+    }
+
+    .products-final-cta-button {
+        width: 100%;
+        min-height: 52px;
+        padding: 0 22px;
+        font-size: 13.5px;
+        justify-content: center;
+    }
+}
+
+/* =========================
+   PRODUCTS & SERVICES PAGE - SMALL MOBILE
+   max 480px
+========================= */
+
+@media (max-width: 480px) {
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    /* Page Header */
+
+    .products-page-header {
+        padding: 50px 0 58px;
+    }
+
+    .products-page-header-content h1 {
+        font-size: 28px;
+    }
+
+    .products-page-header-content p {
+        font-size: 13.8px;
+    }
+
+    .products-header-note {
+        padding: 13px 14px;
+        border-radius: 17px;
+    }
+
+    /* Service Sections */
+
+    .service-section {
+        padding: 62px 0;
+    }
+
+    .service-container,
+    .service-container-reverse {
+        gap: 30px;
+    }
+
+    .service-content h2 {
+        font-size: 26px;
+    }
+
+    .service-description {
+        font-size: 13.8px;
+    }
+
+    .service-benefit-item {
+        padding: 13px 14px;
+    }
+
+    .service-benefit-item span {
+        font-size: 12.8px;
+    }
+
+    /* Gallery */
+
+    .gallery-main {
+        height: 260px;
+        border-radius: 24px;
+    }
+
+    .gallery-badge {
+        left: 16px;
+        bottom: 16px;
+        font-size: 11.5px;
+    }
+
+    .gallery-thumbs {
+        gap: 8px;
+    }
+
+    .gallery-thumb {
+        height: 74px;
+        border-radius: 15px;
+    }
+
+    /* Final CTA */
+
+    .products-final-cta-section {
+        padding: 62px 0 68px;
+    }
+
+    .products-final-cta {
+        padding: 24px 20px;
+        border-radius: 24px;
+    }
+
+    .products-final-cta-content h2 {
+        font-size: 23px;
+    }
+
+    .products-final-cta-content p {
+        font-size: 13.6px;
+    }
+}

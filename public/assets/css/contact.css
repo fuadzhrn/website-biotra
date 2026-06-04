@@ -1222,3 +1222,1459 @@
 .faq-item.active .faq-answer {
     max-height: 220px;
 }
+
+/* =========================
+   CONTACT PAGE - LAPTOP VIEW
+   1024px - 1440px
+========================= */
+
+@media (max-width: 1440px) {
+    .container {
+        max-width: 1120px;
+    }
+
+    /* =========================
+       PAGE HEADER
+    ========================= */
+
+    .contact-page-header {
+        min-height: 330px;
+        padding: 60px 0 68px;
+    }
+
+    .contact-breadcrumb {
+        margin-bottom: 22px;
+        padding: 8px 14px;
+        font-size: 12.5px;
+    }
+
+    .contact-header-label {
+        padding: 8px 15px;
+        margin-bottom: 17px;
+        font-size: 13px;
+    }
+
+    .contact-page-header-content h1 {
+        max-width: 760px;
+        font-size: 40px;
+        line-height: 1.12;
+        letter-spacing: -1.1px;
+        margin-bottom: 18px;
+    }
+
+    .contact-page-header-content p {
+        max-width: 720px;
+        font-size: 14.5px;
+        line-height: 1.78;
+        margin-bottom: 20px;
+    }
+
+    .contact-header-note {
+        max-width: 680px;
+        padding: 14px 16px;
+        border-radius: 18px;
+    }
+
+    .contact-header-note span {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    /* =========================
+       SECTION SPACING
+    ========================= */
+
+    .contact-info-section,
+    .consultation-form-section,
+    .location-map-section,
+    .contact-faq-section,
+    .contact-final-cta-section {
+        padding: 88px 0;
+    }
+
+    .contact-section-label {
+        padding: 8px 15px;
+        margin-bottom: 20px;
+        font-size: 12.5px;
+    }
+
+    /* =========================
+       CONTACT INFO SECTION
+    ========================= */
+
+    .contact-info-container {
+        grid-template-columns: 0.92fr 1.08fr;
+        gap: 52px;
+    }
+
+    .contact-info-content {
+        max-width: 520px;
+    }
+
+    .contact-info-content h2 {
+        font-size: 36px;
+        line-height: 1.16;
+        letter-spacing: -0.9px;
+        margin-bottom: 20px;
+    }
+
+    .contact-info-content p {
+        font-size: 14.5px;
+        line-height: 1.75;
+        margin-bottom: 16px;
+    }
+
+    .contact-info-actions {
+        gap: 14px;
+        margin-top: 30px;
+    }
+
+    .contact-whatsapp-button,
+    .contact-outline-button {
+        min-height: 50px;
+        padding: 0 22px;
+        font-size: 13.5px;
+    }
+
+    .contact-panel {
+        padding: 30px;
+        border-radius: 30px;
+    }
+
+    .contact-panel-wrapper::before {
+        inset: 26px -18px -18px 26px;
+        border-radius: 30px;
+    }
+
+    .contact-panel-header {
+        margin-bottom: 24px;
+    }
+
+    .contact-panel-header h3 {
+        font-size: 30px;
+    }
+
+    .contact-panel-header p {
+        font-size: 14px;
+    }
+
+    .contact-panel-list {
+        gap: 14px;
+    }
+
+    .contact-panel-item {
+        padding: 15px;
+        border-radius: 20px;
+        gap: 14px;
+    }
+
+    .contact-panel-icon {
+        width: 46px;
+        height: 46px;
+        flex: 0 0 46px;
+        font-size: 21px;
+        border-radius: 15px;
+    }
+
+    .contact-panel-item h4 {
+        font-size: 15px;
+    }
+
+    .contact-panel-item strong {
+        font-size: 13px;
+    }
+
+    .contact-panel-item p {
+        font-size: 12.5px;
+    }
+
+    .contact-panel-note {
+        padding: 15px 16px;
+        border-radius: 18px;
+    }
+
+    .contact-panel-note span {
+        font-size: 12.5px;
+    }
+
+    /* =========================
+       CONSULTATION FORM SECTION
+    ========================= */
+
+    .consultation-form-container {
+        grid-template-columns: 1.08fr 0.92fr;
+        gap: 28px;
+    }
+
+    .consultation-form-card {
+        padding: 32px;
+        border-radius: 30px;
+    }
+
+    .consultation-form-header {
+        margin-bottom: 26px;
+    }
+
+    .consultation-form-header h2 {
+        font-size: 34px;
+        line-height: 1.18;
+        letter-spacing: -0.8px;
+        margin: 18px 0 14px;
+    }
+
+    .consultation-form-header p {
+        font-size: 14.5px;
+        line-height: 1.75;
+    }
+
+    .consultation-form {
+        gap: 16px;
+    }
+
+    .form-row {
+        gap: 16px;
+    }
+
+    .form-group {
+        gap: 8px;
+    }
+
+    .form-group label {
+        font-size: 13.5px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 14px 15px;
+        border-radius: 16px;
+        font-size: 13.5px;
+    }
+
+    .form-group textarea {
+        min-height: 135px;
+    }
+
+    .form-footer {
+        gap: 18px;
+    }
+
+    .consultation-submit-button {
+        min-height: 50px;
+        padding: 0 24px;
+        font-size: 13.5px;
+    }
+
+    .form-footer p {
+        font-size: 12.5px;
+        line-height: 1.55;
+    }
+
+    .quick-help-panel {
+        padding: 30px;
+        border-radius: 30px;
+    }
+
+    .quick-help-header {
+        margin-bottom: 24px;
+    }
+
+    .quick-help-header h3 {
+        font-size: 26px;
+        line-height: 1.18;
+    }
+
+    .quick-help-header p {
+        font-size: 13.5px;
+        line-height: 1.7;
+    }
+
+    .quick-help-list {
+        gap: 13px;
+    }
+
+    .quick-help-item {
+        padding: 15px;
+        border-radius: 20px;
+        gap: 13px;
+    }
+
+    .quick-help-icon {
+        width: 44px;
+        height: 44px;
+        flex: 0 0 44px;
+        font-size: 20px;
+        border-radius: 15px;
+    }
+
+    .quick-help-item h4 {
+        font-size: 15px;
+    }
+
+    .quick-help-item p {
+        font-size: 12.4px;
+        line-height: 1.5;
+    }
+
+    .quick-help-note {
+        padding: 15px 16px;
+        border-radius: 18px;
+    }
+
+    .quick-help-note span {
+        font-size: 12.5px;
+    }
+
+    /* =========================
+       LOCATION MAP SECTION
+    ========================= */
+
+    .location-map-header {
+        max-width: 760px;
+        margin-bottom: 46px;
+    }
+
+    .location-map-header h2 {
+        font-size: 36px;
+        line-height: 1.16;
+        letter-spacing: -0.9px;
+        margin: 20px 0 16px;
+    }
+
+    .location-map-header p {
+        font-size: 14.5px;
+        line-height: 1.75;
+        max-width: 700px;
+    }
+
+    .location-map-wrapper {
+        min-height: 500px;
+        border-radius: 32px;
+    }
+
+    .location-address-card {
+        left: 32px;
+        width: 390px;
+        padding: 26px;
+        border-radius: 28px;
+    }
+
+    .location-address-icon {
+        width: 56px;
+        height: 56px;
+        font-size: 26px;
+        border-radius: 18px;
+        margin-bottom: 20px;
+    }
+
+    .location-address-content h3 {
+        font-size: 25px;
+    }
+
+    .location-address-content p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .location-info-list {
+        gap: 11px;
+        margin-bottom: 22px;
+    }
+
+    .location-info-item {
+        padding: 12px 13px;
+        border-radius: 16px;
+    }
+
+    .location-info-item span {
+        font-size: 12.5px;
+    }
+
+    .location-map-button {
+        min-height: 50px;
+        padding: 0 22px;
+        font-size: 13.5px;
+    }
+
+    /* =========================
+       FAQ SECTION
+    ========================= */
+
+    .contact-faq-header {
+        max-width: 760px;
+        margin-bottom: 46px;
+    }
+
+    .contact-faq-header h2 {
+        font-size: 36px;
+        line-height: 1.16;
+        letter-spacing: -0.9px;
+        margin: 20px 0 16px;
+    }
+
+    .contact-faq-header p {
+        font-size: 14.5px;
+        line-height: 1.75;
+    }
+
+    .faq-layout {
+        grid-template-columns: 0.82fr 1.18fr;
+        gap: 28px;
+    }
+
+    .faq-intro-card {
+        top: 96px;
+        padding: 30px;
+        border-radius: 30px;
+    }
+
+    .faq-intro-icon {
+        width: 58px;
+        height: 58px;
+        font-size: 27px;
+        border-radius: 19px;
+        margin-bottom: 22px;
+    }
+
+    .faq-intro-card h3 {
+        font-size: 26px;
+    }
+
+    .faq-intro-card p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .faq-whatsapp-button {
+        min-height: 50px;
+        padding: 0 22px;
+        font-size: 13.5px;
+    }
+
+    .faq-accordion {
+        gap: 14px;
+    }
+
+    .faq-item {
+        border-radius: 22px;
+    }
+
+    .faq-question {
+        min-height: 70px;
+        padding: 0 22px;
+        gap: 18px;
+    }
+
+    .faq-question span {
+        font-size: 15.5px;
+        line-height: 1.4;
+    }
+
+    .faq-question i {
+        width: 34px;
+        height: 34px;
+        flex: 0 0 34px;
+        font-size: 15px;
+        border-radius: 12px;
+    }
+
+    .faq-answer p {
+        padding: 0 22px 22px;
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+    /* =========================
+       CONTACT FINAL CTA
+       Kalau nanti sudah dibuat
+    ========================= */
+
+    .contact-final-cta {
+        padding: 38px 42px;
+        border-radius: 30px;
+        gap: 36px;
+    }
+
+    .contact-final-cta-content h2 {
+        font-size: 32px;
+        line-height: 1.22;
+    }
+
+    .contact-final-cta-content p {
+        font-size: 14.5px;
+        line-height: 1.75;
+    }
+
+    .contact-final-cta-button {
+        min-height: 52px;
+        padding: 0 24px;
+        font-size: 13.5px;
+    }
+}
+
+/* =========================
+   CONTACT PAGE - SMALL LAPTOP
+   1024px - 1200px
+========================= */
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    /* Page Header */
+
+    .contact-page-header {
+        min-height: 310px;
+        padding: 54px 0 62px;
+    }
+
+    .contact-page-header-content h1 {
+        max-width: 700px;
+        font-size: 36px;
+    }
+
+    .contact-page-header-content p {
+        max-width: 680px;
+        font-size: 14px;
+    }
+
+    /* Section spacing */
+
+    .contact-info-section,
+    .consultation-form-section,
+    .location-map-section,
+    .contact-faq-section,
+    .contact-final-cta-section {
+        padding: 78px 0;
+    }
+
+    /* Contact Info */
+
+    .contact-info-container {
+        gap: 36px;
+    }
+
+    .contact-info-content h2,
+    .location-map-header h2,
+    .contact-faq-header h2 {
+        font-size: 32px;
+    }
+
+    .contact-info-content p,
+    .location-map-header p,
+    .contact-faq-header p {
+        font-size: 14px;
+    }
+
+    .contact-panel {
+        padding: 28px 24px;
+    }
+
+    .contact-panel-header h3 {
+        font-size: 27px;
+    }
+
+    .contact-panel-item {
+        padding: 14px;
+    }
+
+    .contact-panel-item strong {
+        font-size: 12.6px;
+    }
+
+    .contact-panel-item p {
+        font-size: 12px;
+    }
+
+    /* Consultation Form */
+
+    .consultation-form-container {
+        gap: 24px;
+    }
+
+    .consultation-form-card {
+        padding: 30px 26px;
+    }
+
+    .consultation-form-header h2 {
+        font-size: 30px;
+    }
+
+    .consultation-form-header p {
+        font-size: 14px;
+    }
+
+    .quick-help-panel {
+        padding: 28px 24px;
+    }
+
+    .quick-help-header h3 {
+        font-size: 24px;
+    }
+
+    .quick-help-item {
+        padding: 14px;
+    }
+
+    .quick-help-item h4 {
+        font-size: 14.5px;
+    }
+
+    .quick-help-item p {
+        font-size: 12px;
+    }
+
+    /* Location Map */
+
+    .location-map-wrapper {
+        min-height: 460px;
+    }
+
+    .location-address-card {
+        left: 26px;
+        width: 360px;
+        padding: 24px;
+    }
+
+    .location-address-content h3 {
+        font-size: 23px;
+    }
+
+    .location-address-content p {
+        font-size: 13.5px;
+    }
+
+    /* FAQ */
+
+    .faq-layout {
+        gap: 24px;
+    }
+
+    .faq-intro-card {
+        padding: 28px 24px;
+    }
+
+    .faq-intro-card h3 {
+        font-size: 24px;
+    }
+
+    .faq-intro-card p {
+        font-size: 13.5px;
+    }
+
+    .faq-question {
+        min-height: 68px;
+        padding: 0 20px;
+    }
+
+    .faq-question span {
+        font-size: 15px;
+    }
+
+    .faq-answer p {
+        padding: 0 20px 20px;
+        font-size: 13.5px;
+    }
+}
+
+/* =========================
+   CONTACT PAGE - MOBILE VIEW
+   max 768px
+========================= */
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* =========================
+       PAGE HEADER
+    ========================= */
+
+    .contact-page-header {
+        min-height: auto;
+        padding: 56px 0 64px;
+    }
+
+    .contact-breadcrumb {
+        margin-bottom: 20px;
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+
+    .contact-header-label {
+        padding: 8px 14px;
+        margin-bottom: 18px;
+        font-size: 12px;
+    }
+
+    .contact-page-header-content {
+        max-width: 100%;
+    }
+
+    .contact-page-header-content h1 {
+        max-width: 100%;
+        font-size: 32px;
+        line-height: 1.16;
+        letter-spacing: -0.8px;
+        margin-bottom: 18px;
+    }
+
+    .contact-page-header-content p {
+        max-width: 100%;
+        font-size: 14.2px;
+        line-height: 1.75;
+        margin-bottom: 20px;
+    }
+
+    .contact-header-note {
+        max-width: 100%;
+        padding: 14px 16px;
+        border-radius: 18px;
+    }
+
+    .contact-header-note i {
+        font-size: 18px;
+    }
+
+    .contact-header-note span {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    /* =========================
+       SECTION GENERAL
+    ========================= */
+
+    .contact-info-section,
+    .consultation-form-section,
+    .location-map-section,
+    .contact-faq-section,
+    .contact-final-cta-section {
+        padding: 70px 0;
+    }
+
+    .contact-section-label {
+        padding: 8px 14px;
+        margin-bottom: 18px;
+        font-size: 12px;
+    }
+
+    /* =========================
+       CONTACT INFO SECTION
+    ========================= */
+
+    .contact-info-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 34px;
+    }
+
+    .contact-info-content {
+        max-width: 100%;
+    }
+
+    .contact-info-content h2 {
+        font-size: 30px;
+        line-height: 1.18;
+        letter-spacing: -0.7px;
+        margin-bottom: 18px;
+    }
+
+    .contact-info-content p {
+        font-size: 14.2px;
+        line-height: 1.75;
+        margin-bottom: 15px;
+    }
+
+    .contact-info-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-top: 28px;
+    }
+
+    .contact-whatsapp-button,
+    .contact-outline-button {
+        width: 100%;
+        min-height: 50px;
+        padding: 0 20px;
+        font-size: 13.5px;
+        justify-content: center;
+    }
+
+    .contact-panel-wrapper::before {
+        display: none;
+    }
+
+    .contact-panel {
+        padding: 28px 22px;
+        border-radius: 28px;
+    }
+
+    .contact-panel-header {
+        margin-bottom: 24px;
+    }
+
+    .contact-panel-header span {
+        font-size: 12px;
+    }
+
+    .contact-panel-header h3 {
+        font-size: 28px;
+        line-height: 1.18;
+    }
+
+    .contact-panel-header p {
+        font-size: 13.8px;
+        line-height: 1.7;
+    }
+
+    .contact-panel-list {
+        gap: 14px;
+    }
+
+    .contact-panel-item {
+        padding: 15px;
+        border-radius: 20px;
+        gap: 13px;
+    }
+
+    .contact-panel-icon {
+        width: 46px;
+        height: 46px;
+        flex: 0 0 46px;
+        font-size: 21px;
+        border-radius: 15px;
+    }
+
+    .contact-panel-item h4 {
+        font-size: 15px;
+    }
+
+    .contact-panel-item strong {
+        font-size: 13px;
+        line-height: 1.45;
+    }
+
+    .contact-panel-item p {
+        font-size: 12.5px;
+        line-height: 1.5;
+    }
+
+    .contact-panel-note {
+        padding: 15px 16px;
+        border-radius: 18px;
+    }
+
+    .contact-panel-note i {
+        font-size: 18px;
+    }
+
+    .contact-panel-note span {
+        font-size: 12.5px;
+        line-height: 1.6;
+    }
+
+    /* =========================
+       CONSULTATION FORM SECTION
+    ========================= */
+
+    .consultation-form-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .consultation-form-card {
+        padding: 28px 22px;
+        border-radius: 28px;
+    }
+
+    .consultation-form-header {
+        margin-bottom: 26px;
+    }
+
+    .consultation-form-header h2 {
+        font-size: 28px;
+        line-height: 1.2;
+        letter-spacing: -0.7px;
+        margin: 18px 0 14px;
+    }
+
+    .consultation-form-header p {
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+    .consultation-form {
+        gap: 16px;
+    }
+
+    .form-row {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .form-group {
+        gap: 8px;
+    }
+
+    .form-group label {
+        font-size: 13.5px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 14px 15px;
+        border-radius: 16px;
+        font-size: 13.5px;
+    }
+
+    .form-group textarea {
+        min-height: 140px;
+    }
+
+    .form-footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-top: 4px;
+    }
+
+    .consultation-submit-button {
+        width: 100%;
+        min-height: 50px;
+        padding: 0 22px;
+        font-size: 13.5px;
+        justify-content: center;
+    }
+
+    .form-footer p {
+        font-size: 12.5px;
+        line-height: 1.6;
+    }
+
+    .quick-help-panel {
+        padding: 28px 22px;
+        border-radius: 28px;
+    }
+
+    .quick-help-header {
+        margin-bottom: 24px;
+    }
+
+    .quick-help-header span {
+        font-size: 12px;
+    }
+
+    .quick-help-header h3 {
+        font-size: 26px;
+        line-height: 1.2;
+    }
+
+    .quick-help-header p {
+        font-size: 13.8px;
+        line-height: 1.7;
+    }
+
+    .quick-help-list {
+        gap: 14px;
+    }
+
+    .quick-help-item {
+        padding: 15px;
+        border-radius: 20px;
+        gap: 13px;
+    }
+
+    .quick-help-icon {
+        width: 46px;
+        height: 46px;
+        flex: 0 0 46px;
+        font-size: 21px;
+        border-radius: 15px;
+    }
+
+    .quick-help-item h4 {
+        font-size: 15px;
+    }
+
+    .quick-help-item p {
+        font-size: 12.5px;
+        line-height: 1.55;
+    }
+
+    .quick-help-note {
+        padding: 15px 16px;
+        border-radius: 18px;
+    }
+
+    .quick-help-note i {
+        font-size: 18px;
+    }
+
+    .quick-help-note span {
+        font-size: 12.5px;
+        line-height: 1.6;
+    }
+
+    /* =========================
+       LOCATION MAP SECTION
+    ========================= */
+
+    .location-map-header {
+        max-width: 100%;
+        margin-bottom: 34px;
+        text-align: left;
+    }
+
+    .location-map-header h2 {
+        font-size: 30px;
+        line-height: 1.18;
+        letter-spacing: -0.7px;
+        margin: 18px 0 14px;
+    }
+
+    .location-map-header p {
+        max-width: 100%;
+        font-size: 14.2px;
+        line-height: 1.75;
+    }
+
+    .location-map-wrapper {
+        min-height: auto;
+        border-radius: 28px;
+        overflow: visible;
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .location-map-wrapper::after {
+        display: none;
+    }
+
+    .google-map-box {
+        position: relative;
+        inset: auto;
+        height: 320px;
+        border-radius: 26px;
+        overflow: hidden;
+        background-color: var(--navy);
+        border: 1px solid rgba(214, 164, 58, 0.22);
+        box-shadow: 0 22px 52px rgba(15, 23, 42, 0.12);
+        order: 2;
+    }
+
+    .google-map-box iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+
+    .location-address-card {
+        position: relative;
+        left: auto;
+        top: auto;
+        transform: none;
+        z-index: 3;
+        width: 100%;
+        padding: 26px 22px;
+        border-radius: 26px;
+        order: 1;
+    }
+
+    .location-address-icon {
+        width: 54px;
+        height: 54px;
+        font-size: 25px;
+        border-radius: 18px;
+        margin-bottom: 20px;
+    }
+
+    .location-address-content span {
+        font-size: 12px;
+    }
+
+    .location-address-content h3 {
+        font-size: 24px;
+        line-height: 1.25;
+    }
+
+    .location-address-content p {
+        font-size: 13.8px;
+        line-height: 1.7;
+        margin-bottom: 20px;
+    }
+
+    .location-info-list {
+        gap: 11px;
+        margin-bottom: 22px;
+    }
+
+    .location-info-item {
+        padding: 13px 14px;
+        border-radius: 16px;
+    }
+
+    .location-info-item i {
+        font-size: 18px;
+    }
+
+    .location-info-item span {
+        font-size: 12.8px;
+        line-height: 1.55;
+    }
+
+    .location-map-button {
+        width: 100%;
+        min-height: 50px;
+        padding: 0 22px;
+        font-size: 13.5px;
+        justify-content: center;
+    }
+
+    /* =========================
+       FAQ SECTION
+    ========================= */
+
+    .contact-faq-header {
+        max-width: 100%;
+        margin-bottom: 34px;
+        text-align: left;
+    }
+
+    .contact-faq-header h2 {
+        font-size: 30px;
+        line-height: 1.18;
+        letter-spacing: -0.7px;
+        margin: 18px 0 14px;
+    }
+
+    .contact-faq-header p {
+        max-width: 100%;
+        font-size: 14.2px;
+        line-height: 1.75;
+        margin: 0;
+    }
+
+    .faq-layout {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .faq-intro-card {
+        position: relative;
+        top: auto;
+        padding: 28px 22px;
+        border-radius: 28px;
+    }
+
+    .faq-intro-icon {
+        width: 56px;
+        height: 56px;
+        font-size: 26px;
+        border-radius: 18px;
+        margin-bottom: 20px;
+    }
+
+    .faq-intro-card h3 {
+        font-size: 26px;
+        line-height: 1.2;
+    }
+
+    .faq-intro-card p {
+        font-size: 13.8px;
+        line-height: 1.7;
+        margin-bottom: 24px;
+    }
+
+    .faq-whatsapp-button {
+        width: 100%;
+        min-height: 50px;
+        padding: 0 22px;
+        font-size: 13.5px;
+        justify-content: center;
+    }
+
+    .faq-accordion {
+        gap: 14px;
+    }
+
+    .faq-item {
+        border-radius: 22px;
+    }
+
+    .faq-question {
+        min-height: 70px;
+        padding: 0 20px;
+        gap: 16px;
+    }
+
+    .faq-question span {
+        font-size: 15px;
+        line-height: 1.45;
+    }
+
+    .faq-question i {
+        width: 34px;
+        height: 34px;
+        flex: 0 0 34px;
+        font-size: 15px;
+        border-radius: 12px;
+    }
+
+    .faq-answer p {
+        padding: 0 20px 20px;
+        font-size: 13.8px;
+        line-height: 1.75;
+    }
+
+    .faq-item.active .faq-answer {
+        max-height: 260px;
+    }
+
+    /* =========================
+       CONTACT FINAL CTA
+       Kalau section CTA sudah dibuat
+    ========================= */
+
+    .contact-final-cta {
+        padding: 28px 24px;
+        border-radius: 26px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .contact-final-cta-content {
+        max-width: 100%;
+    }
+
+    .contact-final-cta-content h2 {
+        font-size: 26px;
+        line-height: 1.24;
+        letter-spacing: -0.6px;
+        margin-bottom: 12px;
+    }
+
+    .contact-final-cta-content p {
+        font-size: 14px;
+        line-height: 1.72;
+    }
+
+    .contact-final-cta-button {
+        width: 100%;
+        min-height: 52px;
+        padding: 0 22px;
+        font-size: 13.5px;
+        justify-content: center;
+    }
+}
+/* =========================
+   CONTACT PAGE - SMALL MOBILE
+   max 480px
+========================= */
+
+@media (max-width: 480px) {
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    /* Page Header */
+
+    .contact-page-header {
+        padding: 50px 0 58px;
+    }
+
+    .contact-page-header-content h1 {
+        font-size: 28px;
+    }
+
+    .contact-page-header-content p {
+        font-size: 13.8px;
+    }
+
+    .contact-header-note {
+        padding: 13px 14px;
+        border-radius: 17px;
+    }
+
+    /* General Sections */
+
+    .contact-info-section,
+    .consultation-form-section,
+    .location-map-section,
+    .contact-faq-section,
+    .contact-final-cta-section {
+        padding: 62px 0;
+    }
+
+    .contact-info-content h2,
+    .location-map-header h2,
+    .contact-faq-header h2 {
+        font-size: 26px;
+    }
+
+    .contact-info-content p,
+    .location-map-header p,
+    .contact-faq-header p {
+        font-size: 13.8px;
+    }
+
+    /* Contact Panel */
+
+    .contact-panel,
+    .quick-help-panel,
+    .consultation-form-card,
+    .faq-intro-card {
+        padding: 24px 20px;
+        border-radius: 24px;
+    }
+
+    .contact-panel-header h3 {
+        font-size: 25px;
+    }
+
+    .contact-panel-item,
+    .quick-help-item {
+        padding: 14px;
+        border-radius: 18px;
+    }
+
+    .contact-panel-icon,
+    .quick-help-icon {
+        width: 42px;
+        height: 42px;
+        flex: 0 0 42px;
+        font-size: 19px;
+        border-radius: 14px;
+    }
+
+    .contact-panel-item h4,
+    .quick-help-item h4 {
+        font-size: 14px;
+    }
+
+    .contact-panel-item strong {
+        font-size: 12.5px;
+    }
+
+    .contact-panel-item p,
+    .quick-help-item p {
+        font-size: 12px;
+    }
+
+    /* Form */
+
+    .consultation-form-header h2 {
+        font-size: 25px;
+    }
+
+    .consultation-form-header p {
+        font-size: 13.8px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 13px;
+        padding: 13px 14px;
+        border-radius: 15px;
+    }
+
+    .form-group textarea {
+        min-height: 130px;
+    }
+
+    /* Quick Help */
+
+    .quick-help-header h3 {
+        font-size: 23px;
+    }
+
+    .quick-help-header p {
+        font-size: 13.5px;
+    }
+
+    /* Map */
+
+    .google-map-box {
+        height: 280px;
+        border-radius: 24px;
+    }
+
+    .location-address-card {
+        padding: 24px 20px;
+        border-radius: 24px;
+    }
+
+    .location-address-content h3 {
+        font-size: 22px;
+    }
+
+    .location-address-content p {
+        font-size: 13.5px;
+    }
+
+    .location-info-item span {
+        font-size: 12.5px;
+    }
+
+    /* FAQ */
+
+    .faq-intro-card h3 {
+        font-size: 23px;
+    }
+
+    .faq-intro-card p {
+        font-size: 13.5px;
+    }
+
+    .faq-question {
+        min-height: 66px;
+        padding: 0 18px;
+    }
+
+    .faq-question span {
+        font-size: 14px;
+    }
+
+    .faq-question i {
+        width: 32px;
+        height: 32px;
+        flex: 0 0 32px;
+        font-size: 14px;
+    }
+
+    .faq-answer p {
+        padding: 0 18px 18px;
+        font-size: 13.4px;
+    }
+
+    /* CTA */
+
+    .contact-final-cta {
+        padding: 24px 20px;
+        border-radius: 24px;
+    }
+
+    .contact-final-cta-content h2 {
+        font-size: 23px;
+    }
+
+    .contact-final-cta-content p {
+        font-size: 13.6px;
+    }
+}
