@@ -14,3 +14,6 @@ Route::get('/produk-layanan', function () {
 Route::get('/kemitraan', function () {
     return view('pages.partnership');
 })->name('partnership');
+Route::get('/kontak', function () {
+    return view('pages.contact');
+})->name('contact');
