@@ -16,8 +16,9 @@
         Tentang Kami
     </a>
 
-    <a href="#" class="nav-link">
-        Produk & Layanan
+    <a href="{{ route('products-services') }}" 
+        class="nav-link {{ request()->routeIs('products-services') ? 'active' : '' }}">
+            Produk & Layanan
     </a>
 
     <a href="#" class="nav-link">

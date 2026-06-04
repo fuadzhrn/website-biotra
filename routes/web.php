@@ -8,3 +8,6 @@ Route::get('/', function () {
 Route::get('/tentang-kami', function () {
     return view('pages.about');
 })->name('about');
+Route::get('/produk-layanan', function () {
+    return view('pages.products-services');
+})->name('products-services');
