@@ -5,13 +5,29 @@
             <span class="brand-text">BIOTRA</span>
         </a>
 
-        <nav class="navbar-menu">
-            <a href="{{ route('home') }}" class="nav-link active">Beranda</a>
-            <a href="#" class="nav-link">Tentang Kami</a>
-            <a href="#" class="nav-link">Produk & Layanan</a>
-            <a href="#" class="nav-link">Kemitraan</a>
-            <a href="#" class="nav-link">Kontak</a>
-        </nav>
+       <nav class="navbar-menu">
+    <a href="{{ route('home') }}" 
+       class="nav-link {{ request()->routeIs('home') ? 'active' : '' }}">
+        Beranda
+    </a>
+
+    <a href="{{ route('about') }}" 
+       class="nav-link {{ request()->routeIs('about') ? 'active' : '' }}">
+        Tentang Kami
+    </a>
+
+    <a href="#" class="nav-link">
+        Produk & Layanan
+    </a>
+
+    <a href="#" class="nav-link">
+        Kemitraan
+    </a>
+
+    <a href="#" class="nav-link">
+        Kontak
+    </a>
+</nav>
 
         <a href="#" class="btn-navbar">
             Konsultasi Sekarang
