@@ -11,3 +11,6 @@ Route::get('/tentang-kami', function () {
 Route::get('/produk-layanan', function () {
     return view('pages.products-services');
 })->name('products-services');
+Route::get('/kemitraan', function () {
+    return view('pages.partnership');
+})->name('partnership');

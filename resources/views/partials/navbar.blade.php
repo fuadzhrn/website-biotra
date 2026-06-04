@@ -21,10 +21,10 @@
             Produk & Layanan
     </a>
 
-    <a href="#" class="nav-link">
-        Kemitraan
+    <a href="{{ route('partnership') }}" 
+        class="nav-link {{ request()->routeIs('partnership') ? 'active' : '' }}">
+            Kemitraan
     </a>
-
     <a href="#" class="nav-link">
         Kontak
     </a>
