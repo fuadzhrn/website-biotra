@@ -373,6 +373,25 @@ section {
     font-weight: 600;
 }
 
+.hero-badge-highlight {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 18px 9px 14px;
+    border-radius: 999px;
+    background: rgba(214, 164, 58, 0.12);
+    border: 1.5px solid rgba(214, 164, 58, 0.4);
+    color: var(--gold);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+}
+
+.hero-badge-highlight i {
+    font-size: 14px;
+    opacity: 0.85;
+}
+
 .hero-actions {
     display: flex;
     align-items: center;

@@ -34,7 +34,7 @@
                         dan staycation.
                     </p>
 
-                    <a href="#" class="product-link">
+                    <a href="{{ route('product-details.villa') }}" class="product-link">
                         Lihat Detail
                         <i class="bi bi-arrow-right"></i>
                     </a>
@@ -59,7 +59,7 @@
                         menginap jangka pendek.
                     </p>
 
-                    <a href="#" class="product-link">
+                    <a href="{{ route('product-details.hotel') }}" class="product-link">
                         Lihat Detail
                         <i class="bi bi-arrow-right"></i>
                     </a>
@@ -84,7 +84,7 @@
                         kebutuhan fleksibel.
                     </p>
 
-                    <a href="#" class="product-link">
+                    <a href="{{ route('product-details.apartment') }}" class="product-link">
                         Lihat Detail
                         <i class="bi bi-arrow-right"></i>
                     </a>
@@ -109,7 +109,7 @@
                         bisnis, dan transportasi harian.
                     </p>
 
-                    <a href="#" class="product-link">
+                    <a href="{{ route('product-details.rental') }}" class="product-link">
                         Lihat Detail
                         <i class="bi bi-arrow-right"></i>
                     </a>

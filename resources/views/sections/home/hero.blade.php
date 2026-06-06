@@ -18,10 +18,10 @@
             </p>
 
             <div class="hero-badges">
-                <span>Kemitraan Properti</span>
-                <span>Rental Kendaraan</span>
-                <span>Pariwisata & Mobilitas</span>
-                <span>Hak Pakai + Hak Sewa</span>
+                <span class="hero-badge-highlight">
+                    <i class="bi bi-shield-fill"></i>
+                    Hak Pakai Gratis + Hak Sewa
+                </span>
             </div>
 
             <div class="hero-actions">

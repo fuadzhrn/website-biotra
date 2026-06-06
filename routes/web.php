@@ -19,6 +19,13 @@ Route::get('/kontak', function () {
     return view('pages.contact');
 })->name('contact');
 
+Route::get('/produk-layanan/villa-staycation', fn () => view('pages.product-details.villa-staycation'))->name('product-details.villa');
+Route::get('/produk-layanan/hotel-penginapan', fn () => view('pages.product-details.hotel-penginapan'))->name('product-details.hotel');
+Route::get('/produk-layanan/apartemen',        fn () => view('pages.product-details.apartemen'))->name('product-details.apartment');
+Route::get('/produk-layanan/rental-kendaraan', fn () => view('pages.product-details.rental-kendaraan'))->name('product-details.rental');
+
+
+Route::redirect('/login', '/admin/login');
 
 /* =========================
    Admin Routes
@@ -34,6 +41,12 @@ Route::prefix('admin')->name('admin.')->middleware('admin.auth')->group(function
     Route::get('/contents/products-services',   fn () => view('admin.contents.products-services'))->name('contents.products-services');
     Route::get('/contents/partnership',         fn () => view('admin.contents.partnership'))->name('contents.partnership');
     Route::get('/contents/contact',             fn () => view('admin.contents.contact'))->name('contents.contact');
+    Route::get('/products',           fn () => view('admin.products.index'))->name('products.index');
+    Route::get('/products/villa',      fn () => view('admin.products.villa'))->name('products.villa');
+    Route::get('/products/hotel',      fn () => view('admin.products.hotel'))->name('products.hotel');
+    Route::get('/products/apartemen',  fn () => view('admin.products.apartemen'))->name('products.apartemen');
+    Route::get('/products/rental',     fn () => view('admin.products.rental'))->name('products.rental');
+
     Route::get('/faqs',                         fn () => view('admin.faqs.index'))->name('faqs.index');
     Route::get('/media',                        fn () => view('admin.media.index'))->name('media.index');
     Route::get('/messages',                     fn () => view('admin.messages.index'))->name('messages.index');

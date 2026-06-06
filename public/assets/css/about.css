@@ -545,6 +545,8 @@
 }
 
 .area-panel {
+    display: block;
+    text-decoration: none;
     position: relative;
     height: 430px;
     border-radius: 32px;
@@ -553,6 +555,7 @@
     border: 1px solid rgba(214, 164, 58, 0.18);
     box-shadow: 0 24px 58px rgba(15, 23, 42, 0.12);
     transition: 0.35s ease;
+    cursor: pointer;
 }
 
 .area-panel:hover {
@@ -561,15 +564,65 @@
     border-color: rgba(214, 164, 58, 0.55);
 }
 
-.area-panel img {
+.area-panel-photo {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: 0.55s ease;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 0.45s ease, transform 0.55s ease;
 }
 
-.area-panel:hover img {
+.area-panel:hover .area-panel-photo {
+    opacity: 0;
     transform: scale(1.08);
+}
+
+.area-panel-map {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 0.45s ease;
+}
+
+.area-panel:hover .area-panel-map {
+    opacity: 1;
+}
+
+.area-map-hint {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 4;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 13px;
+    background: rgba(7, 27, 53, 0.75);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(214, 164, 58, 0.45);
+    border-radius: 8px;
+    color: var(--gold);
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    opacity: 0;
+    transform: translateY(-6px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+}
+
+.area-panel:hover .area-map-hint {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .area-panel-overlay {
@@ -582,17 +635,17 @@
             rgba(7, 27, 53, 0.28) 42%,
             rgba(7, 27, 53, 0.9) 100%
         );
-    z-index: 1;
-    transition: 0.35s ease;
+    z-index: 2;
+    transition: background 0.45s ease;
 }
 
 .area-panel:hover .area-panel-overlay {
     background:
         linear-gradient(
             to bottom,
-            rgba(7, 27, 53, 0.18) 0%,
-            rgba(7, 27, 53, 0.38) 40%,
-            rgba(7, 27, 53, 0.94) 100%
+            rgba(7, 27, 53, 0.04) 0%,
+            rgba(7, 27, 53, 0.14) 38%,
+            rgba(7, 27, 53, 0.75) 100%
         );
 }
 
@@ -601,7 +654,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 2;
+    z-index: 3;
     padding: 28px 24px 30px;
 }
 
