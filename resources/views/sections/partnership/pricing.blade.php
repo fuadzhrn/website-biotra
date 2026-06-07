@@ -1,4 +1,4 @@
-<section class="partnership-pricing-section">
+<section class="partnership-pricing-section promo-pricing-section">
     <div class="pricing-pattern"></div>
 
     <div class="container partnership-pricing-container">
@@ -8,165 +8,102 @@
             </span>
 
             <h2>
-                Pilihan Program Kemitraan BIOTRA
+                Gabung Program Kemitraan BIOTRA<br>dengan Penawaran Spesial
             </h2>
 
             <p>
-                BIOTRA menyediakan beberapa skema program kemitraan yang dapat
-                dipilih calon mitra berdasarkan ketentuan, kuota, dan periode
-                program yang tersedia.
+                BIOTRA menghadirkan penawaran kemitraan dengan skema biaya yang lebih ringan
+                untuk calon mitra yang ingin bergabung dalam ekosistem properti, akomodasi,
+                dan mobilitas. Informasi harga mengikuti kuota, periode, dan ketentuan
+                program yang berlaku.
             </p>
         </div>
 
-        <div class="pricing-grid">
-            <div class="pricing-card">
-                <div class="pricing-card-top">
-                    <span class="pricing-badge">
-                        Reguler
-                    </span>
+        <div class="promo-pricing-card">
 
-                    <h3>Program Reguler</h3>
+            {{-- Panel Kiri: Harga --}}
+            <div class="promo-price-panel">
+                <span class="promo-badge">
+                    <i class="bi bi-tag-fill"></i>
+                    Promo Kemitraan BIOTRA
+                </span>
 
+                {{-- Harga Normal (dicoret) --}}
+                <div class="normal-price-box">
+                    <span class="price-label">Harga Normal</span>
+                    <div class="normal-price-wrapper">
+                        <strong>Rp96.000.000</strong>
+                        <span class="price-cross">
+                            <i class="bi bi-x-lg"></i>
+                        </span>
+                    </div>
+                    <p>Harga normal program reguler</p>
+                </div>
+
+                {{-- Harga Diskon --}}
+                <div class="discount-price-box">
+                    <span class="price-label">Harga Diskon</span>
+                    <strong>Rp36.000.000</strong>
+                    <p>Penawaran khusus untuk calon mitra yang ingin bergabung lebih awal.</p>
+                </div>
+
+                {{-- Harga Special --}}
+                <div class="special-price-box">
+                    <span>Diskon Special</span>
+                    <h3>Rp27.500.000</h3>
                     <p>
-                        Program kemitraan dengan skema reguler untuk mitra yang ingin
-                        bergabung dalam ekosistem BIOTRA.
+                        Isi form konsultasi untuk mendapatkan informasi harga spesial
+                        Rp27.500.000 sesuai kuota dan ketentuan program BIOTRA.
                     </p>
                 </div>
+            </div>
 
-                <div class="pricing-price">
-                    <span>Rp</span>
-                    <strong>96.000.000</strong>
-                </div>
+            {{-- Panel Kanan: Benefit & CTA --}}
+            <div class="promo-benefit-panel">
+                <h3>Benefit Program</h3>
 
-                <ul class="pricing-list">
+                <p>
+                    Program kemitraan BIOTRA dirancang agar calon mitra dapat memahami
+                    skema program dengan lebih praktis dan terarah.
+                </p>
+
+                <ul class="promo-benefit-list">
                     <li>
-                        <i class="bi bi-check-circle"></i>
-                        <span>Akses program kemitraan BIOTRA</span>
+                        <i class="bi bi-check2-circle"></i>
+                        <span>Hak pakai dan hak sewa sesuai ketentuan program</span>
                     </li>
-
                     <li>
-                        <i class="bi bi-check-circle"></i>
-                        <span>Hak pakai dan hak sewa sesuai ketentuan</span>
-                    </li>
-
-                    <li>
-                        <i class="bi bi-check-circle"></i>
+                        <i class="bi bi-check2-circle"></i>
                         <span>Operasional dibantu oleh BIOTRA</span>
                     </li>
-
                     <li>
-                        <i class="bi bi-check-circle"></i>
-                        <span>Termasuk biaya notaris dan PPN sesuai informasi program</span>
-                    </li>
-                </ul>
-
-                <a href="#" class="pricing-button">
-                    Konsultasi Program
-                    <i class="bi bi-arrow-right"></i>
-                </a>
-            </div>
-
-            <div class="pricing-card pricing-card-featured">
-                <div class="pricing-card-top">
-                    <span class="pricing-badge">
-                        Fleksibel
-                    </span>
-
-                    <h3>Program Cicilan</h3>
-
-                    <p>
-                        Pilihan program dengan skema pembayaran bertahap untuk
-                        memudahkan calon mitra bergabung.
-                    </p>
-                </div>
-
-                <div class="pricing-price">
-                    <span>Rp</span>
-                    <strong>36.000.000</strong>
-                </div>
-
-                <ul class="pricing-list">
-                    <li>
-                        <i class="bi bi-check-circle"></i>
-                        <span>DP sesuai ketentuan program</span>
-                    </li>
-
-                    <li>
-                        <i class="bi bi-check-circle"></i>
-                        <span>Angsuran sesuai periode yang tersedia</span>
-                    </li>
-
-                    <li>
-                        <i class="bi bi-check-circle"></i>
+                        <i class="bi bi-check2-circle"></i>
                         <span>Benefit mengikuti skema kemitraan</span>
                     </li>
-
                     <li>
-                        <i class="bi bi-check-circle"></i>
-                        <span>Syarat dan ketentuan berlaku</span>
+                        <i class="bi bi-check2-circle"></i>
+                        <span>Legalitas dan ketentuan program dapat dikonsultasikan</span>
                     </li>
                 </ul>
 
-                <a href="#" class="pricing-button">
-                    Konsultasi Program
+                <a href="{{ route('contact') }}#consultation-form" class="promo-main-button">
+                    Gabung Sekarang
                     <i class="bi bi-arrow-right"></i>
+                </a>
+
+                <a href="{{ route('contact') }}#consultation-form" class="promo-secondary-link">
+                    Konsultasi Program
                 </a>
             </div>
 
-            <div class="pricing-card">
-                <div class="pricing-card-top">
-                    <span class="pricing-badge">
-                        Kuota Terbatas
-                    </span>
-
-                    <h3>Program 100 Mitra Pertama</h3>
-
-                    <p>
-                        Program khusus untuk kuota mitra awal dengan harga yang
-                        mengikuti ketersediaan dan periode program.
-                    </p>
-                </div>
-
-                <div class="pricing-price">
-                    <span>Rp</span>
-                    <strong>27.500.000</strong>
-                </div>
-
-                <ul class="pricing-list">
-                    <li>
-                        <i class="bi bi-check-circle"></i>
-                        <span>Berlaku untuk kuota terbatas</span>
-                    </li>
-
-                    <li>
-                        <i class="bi bi-check-circle"></i>
-                        <span>Harga dapat berubah sewaktu-waktu</span>
-                    </li>
-
-                    <li>
-                        <i class="bi bi-check-circle"></i>
-                        <span>Benefit mengikuti ketentuan program</span>
-                    </li>
-
-                    <li>
-                        <i class="bi bi-check-circle"></i>
-                        <span>Maksimal pembelian mengikuti ketentuan BIOTRA</span>
-                    </li>
-                </ul>
-
-                <a href="#" class="pricing-button">
-                    Konsultasi Program
-                    <i class="bi bi-arrow-right"></i>
-                </a>
-            </div>
         </div>
 
         <div class="pricing-note">
             <i class="bi bi-info-circle"></i>
             <span>
-                Harga, skema pembayaran, benefit, kuota, dan ketentuan program dapat
-                berubah sewaktu-waktu mengikuti kebijakan BIOTRA. Informasi final dapat
-                dikonfirmasi melalui tim BIOTRA.
+                Harga, promo, diskon, kuota, benefit, dan skema pembayaran dapat berubah
+                sewaktu-waktu mengikuti kebijakan BIOTRA. Informasi final dapat dikonfirmasi
+                melalui tim BIOTRA.
             </span>
         </div>
     </div>

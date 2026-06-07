@@ -105,14 +105,19 @@
             <div class="simulation-highlight-content">
                 <span>Estimasi Potensi Gabungan</span>
 
-                <h3>
-                    Rp11.400.000 <small>/ bulan</small>
-                </h3>
+                <div class="sim-monthly-note">
+                    <i class="bi bi-calendar3"></i>
+                    Rp11.400.000 <em>/ bulan</em>
+                </div>
+
+                <div class="sim-total-label">Proyeksi dalam 60 Bulan</div>
+
+                <h3>Rp684.000.000</h3>
 
                 <p>
-                    Proyeksi ilustrasi dalam periode 60 bulan dapat mencapai
-                    <strong>Rp684.000.000</strong>, dengan catatan mengikuti performa
-                    sewa, kondisi pasar, dan ketentuan program.
+                    Potensi akumulatif ilustrasi dari program kemitraan BIOTRA.
+                    Angka bersifat ilustrasi dengan catatan mengikuti performa sewa,
+                    kondisi pasar, dan ketentuan program yang berlaku.
                 </p>
             </div>
 
