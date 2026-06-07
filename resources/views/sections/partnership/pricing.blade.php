@@ -4,18 +4,15 @@
     <div class="container partnership-pricing-container">
         <div class="pricing-header">
             <span class="partnership-section-label section-label-dark">
-                Biaya Bergabung
+                {{ content_value('partnership', 'pricing', 'label', 'Biaya Bergabung') }}
             </span>
 
             <h2>
-                Gabung Program Kemitraan BIOTRA<br>dengan Penawaran Spesial
+                {{ content_value('partnership', 'pricing', 'title', 'Gabung Program Kemitraan BIOTRA dengan Penawaran Spesial') }}
             </h2>
 
             <p>
-                BIOTRA menghadirkan penawaran kemitraan dengan skema biaya yang lebih ringan
-                untuk calon mitra yang ingin bergabung dalam ekosistem properti, akomodasi,
-                dan mobilitas. Informasi harga mengikuti kuota, periode, dan ketentuan
-                program yang berlaku.
+                {{ content_value('partnership', 'pricing', 'description', 'BIOTRA menghadirkan penawaran kemitraan dengan skema biaya yang lebih ringan untuk calon mitra yang ingin bergabung dalam ekosistem properti, akomodasi, dan mobilitas. Informasi harga mengikuti kuota, periode, dan ketentuan program yang berlaku.') }}
             </p>
         </div>
 
@@ -25,74 +22,72 @@
             <div class="promo-price-panel">
                 <span class="promo-badge">
                     <i class="bi bi-tag-fill"></i>
-                    Promo Kemitraan BIOTRA
+                    {{ content_value('partnership', 'pricing', 'promo_badge', 'Promo Kemitraan BIOTRA') }}
                 </span>
 
                 {{-- Harga Normal (dicoret) --}}
                 <div class="normal-price-box">
-                    <span class="price-label">Harga Normal</span>
+                    <span class="price-label">{{ content_value('partnership', 'pricing', 'normal_price_label', 'Harga Normal') }}</span>
                     <div class="normal-price-wrapper">
-                        <strong>Rp96.000.000</strong>
+                        <strong>{{ content_value('partnership', 'pricing', 'normal_price', 'Rp96.000.000') }}</strong>
                         <span class="price-cross">
                             <i class="bi bi-x-lg"></i>
                         </span>
                     </div>
-                    <p>Harga normal program reguler</p>
+                    <p>{{ content_value('partnership', 'pricing', 'normal_price_note', 'Harga normal program reguler') }}</p>
                 </div>
 
                 {{-- Harga Diskon --}}
                 <div class="discount-price-box">
-                    <span class="price-label">Harga Diskon</span>
-                    <strong>Rp36.000.000</strong>
-                    <p>Penawaran khusus untuk calon mitra yang ingin bergabung lebih awal.</p>
+                    <span class="price-label">{{ content_value('partnership', 'pricing', 'discount_price_label', 'Harga Diskon') }}</span>
+                    <strong>{{ content_value('partnership', 'pricing', 'discount_price', 'Rp36.000.000') }}</strong>
+                    <p>{{ content_value('partnership', 'pricing', 'discount_price_note', 'Penawaran khusus untuk calon mitra yang ingin bergabung lebih awal.') }}</p>
                 </div>
 
                 {{-- Harga Special --}}
                 <div class="special-price-box">
-                    <span>Diskon Special</span>
-                    <h3>Rp27.500.000</h3>
+                    <span>{{ content_value('partnership', 'pricing', 'special_label', 'Diskon Special') }}</span>
+                    <h3>{{ content_value('partnership', 'pricing', 'special_price', 'Rp27.500.000') }}</h3>
                     <p>
-                        Isi form konsultasi untuk mendapatkan informasi harga spesial
-                        Rp27.500.000 sesuai kuota dan ketentuan program BIOTRA.
+                        {{ content_value('partnership', 'pricing', 'special_description', 'Isi form konsultasi untuk mendapatkan informasi harga spesial Rp27.500.000 sesuai kuota dan ketentuan program BIOTRA.') }}
                     </p>
                 </div>
             </div>
 
             {{-- Panel Kanan: Benefit & CTA --}}
             <div class="promo-benefit-panel">
-                <h3>Benefit Program</h3>
+                <h3>{{ content_value('partnership', 'pricing', 'benefit_title', 'Benefit Program') }}</h3>
 
                 <p>
-                    Program kemitraan BIOTRA dirancang agar calon mitra dapat memahami
-                    skema program dengan lebih praktis dan terarah.
+                    {{ content_value('partnership', 'pricing', 'benefit_description', 'Program kemitraan BIOTRA dirancang agar calon mitra dapat memahami skema program dengan lebih praktis dan terarah.') }}
                 </p>
 
                 <ul class="promo-benefit-list">
                     <li>
                         <i class="bi bi-check2-circle"></i>
-                        <span>Hak pakai dan hak sewa sesuai ketentuan program</span>
+                        <span>{{ content_value('partnership', 'pricing', 'benefit_1', 'Hak pakai dan hak sewa sesuai ketentuan program') }}</span>
                     </li>
                     <li>
                         <i class="bi bi-check2-circle"></i>
-                        <span>Operasional dibantu oleh BIOTRA</span>
+                        <span>{{ content_value('partnership', 'pricing', 'benefit_2', 'Operasional dibantu oleh BIOTRA') }}</span>
                     </li>
                     <li>
                         <i class="bi bi-check2-circle"></i>
-                        <span>Benefit mengikuti skema kemitraan</span>
+                        <span>{{ content_value('partnership', 'pricing', 'benefit_3', 'Benefit mengikuti skema kemitraan') }}</span>
                     </li>
                     <li>
                         <i class="bi bi-check2-circle"></i>
-                        <span>Legalitas dan ketentuan program dapat dikonsultasikan</span>
+                        <span>{{ content_value('partnership', 'pricing', 'benefit_4', 'Legalitas dan ketentuan program dapat dikonsultasikan') }}</span>
                     </li>
                 </ul>
 
-                <a href="{{ route('contact') }}#consultation-form" class="promo-main-button">
-                    Gabung Sekarang
+                <a href="{{ content_value('partnership', 'pricing', 'main_button_link', route('contact') . '#consultation-form') }}" class="promo-main-button">
+                    {{ content_value('partnership', 'pricing', 'main_button_text', 'Gabung Sekarang') }}
                     <i class="bi bi-arrow-right"></i>
                 </a>
 
-                <a href="{{ route('contact') }}#consultation-form" class="promo-secondary-link">
-                    Konsultasi Program
+                <a href="{{ content_value('partnership', 'pricing', 'secondary_button_link', route('contact') . '#consultation-form') }}" class="promo-secondary-link">
+                    {{ content_value('partnership', 'pricing', 'secondary_button_text', 'Konsultasi Program') }}
                 </a>
             </div>
 
@@ -101,9 +96,7 @@
         <div class="pricing-note">
             <i class="bi bi-info-circle"></i>
             <span>
-                Harga, promo, diskon, kuota, benefit, dan skema pembayaran dapat berubah
-                sewaktu-waktu mengikuti kebijakan BIOTRA. Informasi final dapat dikonfirmasi
-                melalui tim BIOTRA.
+                {{ content_value('partnership', 'pricing', 'note', 'Harga, promo, diskon, kuota, benefit, dan skema pembayaran dapat berubah sewaktu-waktu mengikuti kebijakan BIOTRA. Informasi final dapat dikonfirmasi melalui tim BIOTRA.') }}
             </span>
         </div>
     </div>

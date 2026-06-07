@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\HomeContentController;
 use App\Http\Controllers\Admin\AboutContentController;
 use App\Http\Controllers\Admin\ProductsServicesContentController;
+use App\Http\Controllers\Admin\PartnershipContentController;
 
 Route::get('/', function () {
     return view('pages.home');
@@ -45,7 +46,8 @@ Route::prefix('admin')->name('admin.')->middleware('admin.auth')->group(function
     Route::post('/contents/about', [AboutContentController::class, 'update'])->name('contents.about.update');
     Route::get('/contents/products-services',  [ProductsServicesContentController::class, 'index'])->name('contents.products-services');
     Route::post('/contents/products-services', [ProductsServicesContentController::class, 'update'])->name('contents.products-services.update');
-    Route::get('/contents/partnership',         fn () => view('admin.contents.partnership'))->name('contents.partnership');
+    Route::get('/contents/partnership',  [PartnershipContentController::class, 'index'])->name('contents.partnership');
+    Route::post('/contents/partnership', [PartnershipContentController::class, 'update'])->name('contents.partnership.update');
     Route::get('/contents/contact',             fn () => view('admin.contents.contact'))->name('contents.contact');
     Route::get('/products',           fn () => view('admin.products.index'))->name('products.index');
     Route::get('/products/villa',      fn () => view('admin.products.villa'))->name('products.villa');
