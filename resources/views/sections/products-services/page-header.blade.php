@@ -10,26 +10,21 @@
 
         <div class="products-page-header-content">
             <span class="products-header-label">
-                Produk & Layanan BIOTRA
+                {{ content_value('products_services', 'page_header', 'label', 'Produk & Layanan BIOTRA') }}
             </span>
 
             <h1>
-                Akses Bisnis Properti, Akomodasi, dan Mobilitas dalam Satu Ekosistem
+                {{ content_value('products_services', 'page_header', 'title', 'Akses Bisnis Properti, Akomodasi, dan Mobilitas dalam Satu Ekosistem') }}
             </h1>
 
             <p>
-                BIOTRA menghadirkan beberapa kategori produk dan layanan yang berkaitan
-                dengan kebutuhan penginapan, staycation, perjalanan bisnis, pariwisata,
-                dan transportasi. Setiap kategori dirancang untuk mendukung program
-                kemitraan BIOTRA dengan sistem yang lebih praktis, terkelola, dan mudah
-                dipahami oleh calon mitra.
+                {{ content_value('products_services', 'page_header', 'description', 'BIOTRA menghadirkan beberapa kategori produk dan layanan yang berkaitan dengan kebutuhan penginapan, staycation, perjalanan bisnis, pariwisata, dan transportasi. Setiap kategori dirancang untuk mendukung program kemitraan BIOTRA dengan sistem yang lebih praktis, terkelola, dan mudah dipahami oleh calon mitra.') }}
             </p>
 
             <div class="products-header-note">
                 <i class="bi bi-info-circle"></i>
                 <span>
-                    Gambar yang ditampilkan merupakan dokumentasi atau representasi unit
-                    sesuai kategori layanan BIOTRA.
+                    {{ content_value('products_services', 'page_header', 'note', 'Gambar yang ditampilkan merupakan dokumentasi atau representasi unit sesuai kategori layanan BIOTRA.') }}
                 </span>
             </div>
         </div>

@@ -2,16 +2,15 @@
     <div class="container">
         <div class="section-header products-header">
             <span class="section-label">
-                Produk BIOTRA
+                {{ content_value('home', 'products', 'label', 'Produk BIOTRA') }}
             </span>
 
             <h2>
-                Produk Utama & Area Bisnis BIOTRA
+                {{ content_value('home', 'products', 'title', 'Produk Utama & Area Bisnis BIOTRA') }}
             </h2>
 
             <p>
-                BIOTRA menghadirkan beberapa sektor bisnis yang berkaitan dengan
-                kebutuhan akomodasi, pariwisata, perjalanan bisnis, dan mobilitas.
+                {{ content_value('home', 'products', 'description', 'BIOTRA menghadirkan beberapa sektor bisnis yang berkaitan dengan kebutuhan akomodasi, pariwisata, perjalanan bisnis, dan mobilitas.') }}
             </p>
         </div>
 

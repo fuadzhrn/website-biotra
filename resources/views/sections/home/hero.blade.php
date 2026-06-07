@@ -4,17 +4,15 @@
     <div class="container hero-container">
         <div class="hero-content">
             <span class="hero-label">
-                Program Kemitraan Properti & Mobilitas
+                {{ content_value('home', 'hero', 'label', 'Program Kemitraan Properti & Mobilitas') }}
             </span>
 
             <h1>
-                Punya Bisnis Tanpa Ribet di Sektor Properti & Mobilitas
+                {{ content_value('home', 'hero', 'title', 'Punya Bisnis Tanpa Ribet di Sektor Properti & Mobilitas') }}
             </h1>
 
             <p class="hero-description">
-                BIOTRA membuka akses kemitraan modern untuk properti, penginapan,
-                apartemen, dan rental kendaraan dengan sistem yang lebih praktis
-                dan terkelola.
+                {{ content_value('home', 'hero', 'description', 'BIOTRA membuka akses kemitraan modern untuk properti, penginapan, apartemen, dan rental kendaraan dengan sistem yang lebih praktis dan terkelola.') }}
             </p>
 
             <div class="hero-badges">
@@ -25,20 +23,23 @@
             </div>
 
             <div class="hero-actions">
-                <a href="#" class="btn-primary">
-                    Konsultasi Sekarang
+                <a href="{{ content_value('home', 'hero', 'primary_button_link', route('contact')) }}"
+                   class="btn-primary">
+                    {{ content_value('home', 'hero', 'primary_button_text', 'Konsultasi Sekarang') }}
                     <i class="bi bi-arrow-right"></i>
                 </a>
 
-                <a href="#" class="btn-outline">
-                    Lihat Program
+                <a href="{{ content_value('home', 'hero', 'secondary_button_link', route('partnership')) }}"
+                   class="btn-outline">
+                    {{ content_value('home', 'hero', 'secondary_button_text', 'Lihat Program') }}
                 </a>
             </div>
         </div>
 
         <div class="hero-visual">
             <div class="hero-image-wrapper">
-                <img src="{{ asset('assets/img/hero/hero-biotra.jpg') }}" alt="Program Kemitraan BIOTRA">
+                <img src="{{ content_image('home', 'hero', 'image', 'assets/img/hero/hero-biotra.jpg') }}"
+                     alt="Program Kemitraan BIOTRA">
 
                 <div class="hero-floating-card floating-top">
                     <div class="floating-icon">

@@ -2,7 +2,8 @@
     <div class="container about-short-container">
         <div class="about-visual">
             <div class="about-image-wrapper">
-                <img src="{{ asset('assets/img/about/about-biotra.jpg') }}" alt="Tentang BIOTRA">
+                <img src="{{ content_image('home', 'about_short', 'image', 'assets/img/about/about-biotra.jpg') }}"
+                     alt="Tentang BIOTRA">
 
                 <div class="about-experience-card">
                     <span>BIOTRA</span>
@@ -14,19 +15,15 @@
 
         <div class="about-content">
             <span class="section-label">
-                Tentang BIOTRA
+                {{ content_value('home', 'about_short', 'label', 'Tentang BIOTRA') }}
             </span>
 
             <h2>
-                Program Kemitraan Modern untuk Properti, Pariwisata, dan Mobilitas
+                {{ content_value('home', 'about_short', 'title', 'Program Kemitraan Modern untuk Properti, Pariwisata, dan Mobilitas') }}
             </h2>
 
             <p class="about-description">
-                BIOTRA adalah program kemitraan modern yang bergerak di sektor
-                properti, penginapan, apartemen, rental kendaraan, dan pariwisata.
-                Melalui konsep Hak Pakai dan Hak Sewa, BIOTRA membantu mitra
-                memiliki akses bisnis yang lebih praktis tanpa harus mengelola
-                operasional secara langsung.
+                {{ content_value('home', 'about_short', 'description', 'BIOTRA adalah program kemitraan modern yang bergerak di sektor properti, penginapan, apartemen, rental kendaraan, dan pariwisata. Melalui konsep Hak Pakai dan Hak Sewa, BIOTRA membantu mitra memiliki akses bisnis yang lebih praktis tanpa harus mengelola operasional secara langsung.') }}
             </p>
 
             <div class="about-checklist">

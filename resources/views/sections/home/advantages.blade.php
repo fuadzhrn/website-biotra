@@ -4,16 +4,15 @@
     <div class="container advantages-container">
         <div class="advantages-header">
             <span class="section-label section-label-dark">
-                Keunggulan BIOTRA
+                {{ content_value('home', 'advantages', 'label', 'Keunggulan BIOTRA') }}
             </span>
 
             <h2>
-                Dirancang untuk Mitra yang Ingin Punya Bisnis Tanpa Ribet
+                {{ content_value('home', 'advantages', 'title', 'Dirancang untuk Mitra yang Ingin Punya Bisnis Tanpa Ribet') }}
             </h2>
 
             <p>
-                Program BIOTRA membantu mitra memiliki akses bisnis tanpa harus
-                repot mengurus operasional harian.
+                {{ content_value('home', 'advantages', 'description', 'Program BIOTRA membantu mitra memiliki akses bisnis tanpa harus repot mengurus operasional harian.') }}
             </p>
         </div>
 
@@ -90,7 +89,7 @@
                 Benefit program mengikuti syarat dan ketentuan yang berlaku.
             </p>
 
-            <a href="#" class="btn-primary">
+            <a href="{{ route('contact') }}" class="btn-primary">
                 Konsultasi Program Kemitraan
                 <i class="bi bi-arrow-right"></i>
             </a>

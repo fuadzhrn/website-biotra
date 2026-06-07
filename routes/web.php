@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AuthController;
+use App\Http\Controllers\Admin\HomeContentController;
+use App\Http\Controllers\Admin\AboutContentController;
+use App\Http\Controllers\Admin\ProductsServicesContentController;
 
 Route::get('/', function () {
     return view('pages.home');
@@ -36,9 +39,12 @@ Route::post('/admin/logout', [AuthController::class, 'logout'])->name('admin.log
 
 Route::prefix('admin')->name('admin.')->middleware('admin.auth')->group(function () {
     Route::get('/dashboard',                    fn () => view('admin.dashboard'))->name('dashboard');
-    Route::get('/contents/home',                fn () => view('admin.contents.home'))->name('contents.home');
-    Route::get('/contents/about',               fn () => view('admin.contents.about'))->name('contents.about');
-    Route::get('/contents/products-services',   fn () => view('admin.contents.products-services'))->name('contents.products-services');
+    Route::get('/contents/home',  [HomeContentController::class, 'index'])->name('contents.home');
+    Route::post('/contents/home', [HomeContentController::class, 'update'])->name('contents.home.update');
+    Route::get('/contents/about',  [AboutContentController::class, 'index'])->name('contents.about');
+    Route::post('/contents/about', [AboutContentController::class, 'update'])->name('contents.about.update');
+    Route::get('/contents/products-services',  [ProductsServicesContentController::class, 'index'])->name('contents.products-services');
+    Route::post('/contents/products-services', [ProductsServicesContentController::class, 'update'])->name('contents.products-services.update');
     Route::get('/contents/partnership',         fn () => view('admin.contents.partnership'))->name('contents.partnership');
     Route::get('/contents/contact',             fn () => view('admin.contents.contact'))->name('contents.contact');
     Route::get('/products',           fn () => view('admin.products.index'))->name('products.index');

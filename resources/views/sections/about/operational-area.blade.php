@@ -2,17 +2,15 @@
     <div class="container operational-area-container">
         <div class="area-header">
             <span class="section-label">
-                Area Bisnis
+                {{ content_value('about', 'operational_area', 'label', 'Area Bisnis') }}
             </span>
 
             <h2>
-                Area Operasional dan Produk Utama BIOTRA
+                {{ content_value('about', 'operational_area', 'title', 'Area Operasional dan Produk Utama BIOTRA') }}
             </h2>
 
             <p>
-                BIOTRA mengembangkan peluang kemitraan di beberapa area bisnis
-                yang berkaitan dengan kebutuhan akomodasi, pariwisata, perjalanan
-                bisnis, dan mobilitas.
+                {{ content_value('about', 'operational_area', 'description', 'BIOTRA mengembangkan peluang kemitraan di beberapa area bisnis yang berkaitan dengan kebutuhan akomodasi, pariwisata, perjalanan bisnis, dan mobilitas.') }}
             </p>
         </div>
 
@@ -21,7 +19,7 @@
                href="https://www.google.com/maps/search/Bali,+Indonesia"
                target="_blank" rel="noopener noreferrer">
                 <img class="area-panel-photo"
-                     src="{{ asset('assets/img/about-page/area-bali.jpg') }}"
+                     src="{{ content_image('about', 'operational_area', 'area_1_image', 'assets/img/about-page/area-bali.jpg') }}"
                      alt="Area operasional BIOTRA Bali villa dan staycation">
                 <img class="area-panel-map"
                      src="{{ asset('assets/img/about-page/maps/map-bali.jpg') }}"
@@ -32,11 +30,12 @@
                 </div>
                 <div class="area-panel-overlay"></div>
                 <div class="area-panel-content">
-                    <span class="area-location">Bali</span>
-                    <h3>Villa & Staycation</h3>
+                    <span class="area-location">
+                        {{ content_value('about', 'operational_area', 'area_1_location', 'Bali') }}
+                    </span>
+                    <h3>{{ content_value('about', 'operational_area', 'area_1_title', 'Villa & Staycation') }}</h3>
                     <p>
-                        Peluang bisnis penginapan wisata untuk kebutuhan liburan,
-                        staycation, dan akomodasi pariwisata.
+                        {{ content_value('about', 'operational_area', 'area_1_description', 'Peluang bisnis penginapan wisata untuk kebutuhan liburan, staycation, dan akomodasi pariwisata.') }}
                     </p>
                 </div>
             </a>
@@ -45,7 +44,7 @@
                href="https://www.google.com/maps/search/PIK+2+Jakarta+Utara"
                target="_blank" rel="noopener noreferrer">
                 <img class="area-panel-photo"
-                     src="{{ asset('assets/img/about-page/area-jakarta.jpg') }}"
+                     src="{{ content_image('about', 'operational_area', 'area_2_image', 'assets/img/about-page/area-jakarta.jpg') }}"
                      alt="Area operasional BIOTRA Jakarta PIK 2 hotel dan penginapan">
                 <img class="area-panel-map"
                      src="{{ asset('assets/img/about-page/maps/map-jakarta.jpg') }}"
@@ -56,11 +55,12 @@
                 </div>
                 <div class="area-panel-overlay"></div>
                 <div class="area-panel-content">
-                    <span class="area-location">Jakarta / PIK 2</span>
-                    <h3>Hotel & Penginapan</h3>
+                    <span class="area-location">
+                        {{ content_value('about', 'operational_area', 'area_2_location', 'Jakarta / PIK 2') }}
+                    </span>
+                    <h3>{{ content_value('about', 'operational_area', 'area_2_title', 'Hotel & Penginapan') }}</h3>
                     <p>
-                        Akomodasi untuk kebutuhan perjalanan bisnis, wisata, dan
-                        menginap jangka pendek di area strategis.
+                        {{ content_value('about', 'operational_area', 'area_2_description', 'Akomodasi untuk kebutuhan perjalanan bisnis, wisata, dan menginap jangka pendek di area strategis.') }}
                     </p>
                 </div>
             </a>
@@ -69,7 +69,7 @@
                href="https://www.google.com/maps/search/Bekasi+Jawa+Barat"
                target="_blank" rel="noopener noreferrer">
                 <img class="area-panel-photo"
-                     src="{{ asset('assets/img/about-page/area-bekasi.jpg') }}"
+                     src="{{ content_image('about', 'operational_area', 'area_3_image', 'assets/img/about-page/area-bekasi.jpg') }}"
                      alt="Area operasional BIOTRA Bekasi Cikarang apartemen harian dan mingguan">
                 <img class="area-panel-map"
                      src="{{ asset('assets/img/about-page/maps/map-bekasi.jpg') }}"
@@ -80,11 +80,12 @@
                 </div>
                 <div class="area-panel-overlay"></div>
                 <div class="area-panel-content">
-                    <span class="area-location">Bekasi & Cikarang</span>
-                    <h3>Apartemen Harian & Mingguan</h3>
+                    <span class="area-location">
+                        {{ content_value('about', 'operational_area', 'area_3_location', 'Bekasi & Cikarang') }}
+                    </span>
+                    <h3>{{ content_value('about', 'operational_area', 'area_3_title', 'Apartemen Harian & Mingguan') }}</h3>
                     <p>
-                        Pilihan hunian sementara untuk pekerja, perjalanan bisnis,
-                        maupun kebutuhan tinggal fleksibel.
+                        {{ content_value('about', 'operational_area', 'area_3_description', 'Pilihan hunian sementara untuk pekerja, perjalanan bisnis, maupun kebutuhan tinggal fleksibel.') }}
                     </p>
                 </div>
             </a>
@@ -93,7 +94,7 @@
                href="https://www.google.com/maps/search/Jakarta+Indonesia"
                target="_blank" rel="noopener noreferrer">
                 <img class="area-panel-photo"
-                     src="{{ asset('assets/img/about-page/area-mobility.jpg') }}"
+                     src="{{ content_image('about', 'operational_area', 'area_4_image', 'assets/img/about-page/area-mobility.jpg') }}"
                      alt="Area operasional BIOTRA mobility rental kendaraan wisata dan bisnis">
                 <img class="area-panel-map"
                      src="{{ asset('assets/img/about-page/maps/map-mobility.jpg') }}"
@@ -104,11 +105,12 @@
                 </div>
                 <div class="area-panel-overlay"></div>
                 <div class="area-panel-content">
-                    <span class="area-location">Mobility</span>
-                    <h3>Rental Kendaraan Wisata & Bisnis</h3>
+                    <span class="area-location">
+                        {{ content_value('about', 'operational_area', 'area_4_location', 'Mobility') }}
+                    </span>
+                    <h3>{{ content_value('about', 'operational_area', 'area_4_title', 'Rental Kendaraan Wisata & Bisnis') }}</h3>
                     <p>
-                        Layanan mobilitas untuk kebutuhan perjalanan wisata, bisnis,
-                        dan transportasi harian.
+                        {{ content_value('about', 'operational_area', 'area_4_description', 'Layanan mobilitas untuk kebutuhan perjalanan wisata, bisnis, dan transportasi harian.') }}
                     </p>
                 </div>
             </a>
