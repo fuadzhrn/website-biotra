@@ -46,7 +46,7 @@
                         <i class="bi bi-building-check"></i>
                     </div>
                     <div>
-                        <h4>Hak Pakai + Hak Sewa</h4>
+                        <h4>Hak Pakai Gratis + Hak Sewa</h4>
                         <p>Akses penggunaan dan potensi sewa unit</p>
                     </div>
                 </div>

@@ -71,7 +71,7 @@ class ProductDetailController extends Controller
 
             $galleryImages = $unit->images->isNotEmpty()
                 ? $unit->images->map(fn($img) => 'storage/' . $img->image_path)->toArray()
-                : ($fallbackGallery ?: [$mainImage]);
+                : [];
 
             return [
                 'name'        => $unit->name,

@@ -15,7 +15,7 @@
                 </p>
             </div>
 
-            <a href="{{ content_value('contact', 'cta', 'button_link', 'https://wa.me/6281234567890') }}"
+            <a href="{{ content_value('contact', 'cta', 'button_link', 'https://wa.me/6285188341022') }}"
                target="_blank" class="contact-cta-button">
                 <i class="bi bi-whatsapp"></i>
                 {{ content_value('contact', 'cta', 'button_text', 'Hubungi BIOTRA Sekarang') }}

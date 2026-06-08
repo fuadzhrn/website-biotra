@@ -5,7 +5,7 @@
 @section('meta_keywords', 'kemitraan BIOTRA, program kemitraan, investasi properti, kemitraan properti, rental kendaraan, hak pakai, hak sewa, bagi hasil BIOTRA')
 
 @section('og_title', 'Kemitraan BIOTRA - Punya Bisnis Tanpa Ribet')
-@section('og_description', 'Program kemitraan properti dan mobilitas dengan sistem Hak Pakai, Hak Sewa, operasional dikelola, dan simulasi potensi hasil.')
+@section('og_description', 'Program kemitraan properti dan mobilitas dengan sistem Hak Pakai Gratis, Hak Sewa, operasional dikelola, dan simulasi potensi hasil.')
 @section('og_image', asset('assets/img/partnership/partnership-header.jpg'))
 
 @push('styles')

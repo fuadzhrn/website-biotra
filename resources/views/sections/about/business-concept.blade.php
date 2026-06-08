@@ -8,7 +8,7 @@
             </span>
 
             <h2>
-                {{ content_value('about', 'business_concept', 'title', 'Sistem Kemitraan dengan Konsep Hak Pakai dan Hak Sewa') }}
+                {{ content_value('about', 'business_concept', 'title', 'Sistem Kemitraan dengan Konsep Hak Pakai Gratis dan Hak Sewa') }}
             </h2>
 
             <div class="concept-description">
@@ -30,7 +30,7 @@
 
                 <span class="concept-number">01</span>
 
-                <h3>{{ content_value('about', 'business_concept', 'card_1_title', 'Hak Pakai') }}</h3>
+                <h3>{{ content_value('about', 'business_concept', 'card_1_title', 'Hak Pakai Gratis') }}</h3>
 
                 <p>
                     {{ content_value('about', 'business_concept', 'card_1_description', 'Mitra mendapatkan akses penggunaan unit sesuai program dan ketentuan yang berlaku. Konsep ini memberikan fleksibilitas bagi mitra untuk menikmati manfaat penggunaan unit secara langsung.') }}

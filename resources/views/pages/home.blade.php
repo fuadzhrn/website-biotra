@@ -5,7 +5,7 @@
 @section('meta_keywords', 'BIOTRA, program kemitraan, kemitraan properti, rental kendaraan, villa Bali, apartemen harian, penginapan, pariwisata, mobilitas')
 
 @section('og_title', 'BIOTRA - Punya Bisnis Tanpa Ribet')
-@section('og_description', 'Program kemitraan properti dan mobilitas dengan sistem Hak Pakai, Hak Sewa, dan operasional yang dikelola BIOTRA.')
+@section('og_description', 'Program kemitraan properti dan mobilitas dengan sistem Hak Pakai Gratis, Hak Sewa, dan operasional yang dikelola BIOTRA.')
 @section('og_image', asset('assets/img/hero/hero-biotra.jpg'))
 
 @section('content')

@@ -23,7 +23,7 @@
             </h2>
 
             <p class="about-description">
-                {{ content_value('home', 'about_short', 'description', 'BIOTRA adalah program kemitraan modern yang bergerak di sektor properti, penginapan, apartemen, rental kendaraan, dan pariwisata. Melalui konsep Hak Pakai dan Hak Sewa, BIOTRA membantu mitra memiliki akses bisnis yang lebih praktis tanpa harus mengelola operasional secara langsung.') }}
+                {{ content_value('home', 'about_short', 'description', 'BIOTRA adalah program kemitraan modern yang bergerak di sektor properti, penginapan, apartemen, rental kendaraan, dan pariwisata. Melalui konsep Hak Pakai Gratis dan Hak Sewa, BIOTRA membantu mitra memiliki akses bisnis yang lebih praktis tanpa harus mengelola operasional secara langsung.') }}
             </p>
 
             <div class="about-checklist">
@@ -39,7 +39,7 @@
 
                 <div class="about-check-item">
                     <i class="bi bi-check2-circle"></i>
-                    <span>Menggunakan sistem Hak Pakai + Hak Sewa</span>
+                    <span>Menggunakan sistem Hak Pakai Gratis + Hak Sewa</span>
                 </div>
 
                 <div class="about-check-item">

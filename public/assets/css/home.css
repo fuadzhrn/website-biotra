@@ -182,8 +182,17 @@ section {
     font-size: 30px;
     font-weight: 800;
     color: var(--white);
-    margin-bottom: 18px;
+    margin-bottom: 4px;
     letter-spacing: 1px;
+}
+
+.footer-pt-name {
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    color: var(--gold) !important;
+    letter-spacing: 0.3px;
+    margin-bottom: 14px !important;
+    opacity: 0.9;
 }
 
 .footer-about p {

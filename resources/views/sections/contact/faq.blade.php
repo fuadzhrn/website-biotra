@@ -28,7 +28,7 @@
                     {{ content_value('contact', 'faq', 'intro_description', 'Jika pertanyaan Anda belum terjawab, silakan hubungi tim BIOTRA melalui WhatsApp atau isi form konsultasi yang tersedia.') }}
                 </p>
 
-                <a href="{{ content_value('contact', 'faq', 'intro_button_link', 'https://wa.me/6281234567890') }}"
+                <a href="{{ content_value('contact', 'faq', 'intro_button_link', 'https://wa.me/6285188341022') }}"
                    target="_blank" class="faq-whatsapp-button">
                     {{ content_value('contact', 'faq', 'intro_button_text', 'Tanya via WhatsApp') }}
                     <i class="bi bi-whatsapp"></i>

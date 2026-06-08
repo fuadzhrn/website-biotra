@@ -50,6 +50,7 @@
                 <img
                     src="{{ content_image('products_services', 'villa', 'main_image', 'assets/img/products-services/villa-main.jpg') }}"
                     alt="Villa dan staycation Bali dalam layanan BIOTRA"
+                    class="ps-gallery-trigger" data-group="gallery-villa" data-index="0"
                 >
 
                 <span class="gallery-badge">
@@ -63,6 +64,7 @@
                         src="{{ content_image('products_services', 'villa', 'image_1', 'assets/img/products-services/villa-1.jpg') }}"
                         alt="Interior villa BIOTRA Bali"
                         loading="lazy"
+                        class="ps-gallery-trigger" data-group="gallery-villa" data-index="1"
                     >
                 </div>
 
@@ -71,6 +73,7 @@
                         src="{{ content_image('products_services', 'villa', 'image_2', 'assets/img/products-services/villa-2.jpg') }}"
                         alt="Fasilitas kolam renang villa BIOTRA Bali"
                         loading="lazy"
+                        class="ps-gallery-trigger" data-group="gallery-villa" data-index="2"
                     >
                 </div>
 
@@ -79,6 +82,7 @@
                         src="{{ content_image('products_services', 'villa', 'image_3', 'assets/img/products-services/villa-3.jpg') }}"
                         alt="View dan fasilitas pendukung villa BIOTRA Bali"
                         loading="lazy"
+                        class="ps-gallery-trigger" data-group="gallery-villa" data-index="3"
                     >
                 </div>
             </div>

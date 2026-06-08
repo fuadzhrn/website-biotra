@@ -7,6 +7,7 @@
                     src="{{ content_image('products_services', 'hotel', 'main_image', 'assets/img/products-services/hotel-main.jpg') }}"
                     alt="Hotel dan penginapan Jakarta PIK 2 dalam layanan BIOTRA"
                     loading="lazy"
+                    class="ps-gallery-trigger" data-group="gallery-hotel" data-index="0"
                 >
 
                 <span class="gallery-badge">
@@ -20,6 +21,7 @@
                         src="{{ content_image('products_services', 'hotel', 'image_1', 'assets/img/products-services/hotel-1.jpg') }}"
                         alt="Kamar hotel dan penginapan BIOTRA"
                         loading="lazy"
+                        class="ps-gallery-trigger" data-group="gallery-hotel" data-index="1"
                     >
                 </div>
 
@@ -28,6 +30,7 @@
                         src="{{ content_image('products_services', 'hotel', 'image_2', 'assets/img/products-services/hotel-2.jpg') }}"
                         alt="Fasilitas hotel dan penginapan BIOTRA"
                         loading="lazy"
+                        class="ps-gallery-trigger" data-group="gallery-hotel" data-index="2"
                     >
                 </div>
 
@@ -36,6 +39,7 @@
                         src="{{ content_image('products_services', 'hotel', 'image_3', 'assets/img/products-services/hotel-3.jpg') }}"
                         alt="Area lobby hotel dan penginapan BIOTRA"
                         loading="lazy"
+                        class="ps-gallery-trigger" data-group="gallery-hotel" data-index="3"
                     >
                 </div>
             </div>

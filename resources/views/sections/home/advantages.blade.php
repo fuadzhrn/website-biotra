@@ -21,9 +21,9 @@
                 <div class="advantage-icon">
                     <i class="bi bi-key"></i>
                 </div>
-                <h3>Hak Pakai Unit</h3>
+                <h3>Hak Pakai Gratis Unit</h3>
                 <p>
-                    Mitra mendapatkan akses hak pakai unit sesuai ketentuan
+                    Mitra mendapatkan akses hak pakai gratis unit sesuai ketentuan
                     program yang berlaku.
                 </p>
             </div>

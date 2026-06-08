@@ -51,6 +51,7 @@
                     src="{{ content_image('products_services', 'apartment', 'main_image', 'assets/img/products-services/apartment-main.jpg') }}"
                     alt="Apartemen harian dan mingguan Bekasi Cikarang dalam layanan BIOTRA"
                     loading="lazy"
+                    class="ps-gallery-trigger" data-group="gallery-apartment" data-index="0"
                 >
 
                 <span class="gallery-badge">
@@ -64,6 +65,7 @@
                         src="{{ content_image('products_services', 'apartment', 'image_1', 'assets/img/products-services/apartment-1.jpg') }}"
                         alt="Kamar tidur apartemen BIOTRA"
                         loading="lazy"
+                        class="ps-gallery-trigger" data-group="gallery-apartment" data-index="1"
                     >
                 </div>
 
@@ -72,6 +74,7 @@
                         src="{{ content_image('products_services', 'apartment', 'image_2', 'assets/img/products-services/apartment-2.jpg') }}"
                         alt="Ruang tamu atau dapur apartemen BIOTRA"
                         loading="lazy"
+                        class="ps-gallery-trigger" data-group="gallery-apartment" data-index="2"
                     >
                 </div>
 
@@ -80,6 +83,7 @@
                         src="{{ content_image('products_services', 'apartment', 'image_3', 'assets/img/products-services/apartment-3.jpg') }}"
                         alt="Gedung atau fasilitas apartemen BIOTRA"
                         loading="lazy"
+                        class="ps-gallery-trigger" data-group="gallery-apartment" data-index="3"
                     >
                 </div>
             </div>

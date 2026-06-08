@@ -17,7 +17,7 @@
         <div class="benefits-grid">
             <div class="benefit-card">
                 <div class="benefit-icon"><i class="bi bi-key"></i></div>
-                <h3>{{ content_value('partnership', 'benefits', 'benefit_1_title', 'Hak Pakai Unit') }}</h3>
+                <h3>{{ content_value('partnership', 'benefits', 'benefit_1_title', 'Hak Pakai Gratis Unit') }}</h3>
                 <p>{{ content_value('partnership', 'benefits', 'benefit_1_description', 'Mitra mendapatkan akses penggunaan unit sesuai ketentuan program yang berlaku.') }}</p>
             </div>
 

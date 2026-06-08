@@ -16,7 +16,7 @@
             </div>
 
             <form class="consultation-form" id="consultationForm"
-                  data-whatsapp-target="{{ content_value('contact', 'consultation_form', 'whatsapp_target_number', '6281234567890') }}">
+                  data-whatsapp-target="{{ content_value('contact', 'consultation_form', 'whatsapp_target_number', '6285188341022') }}">
                 <div class="form-row">
                     <div class="form-group">
                         <label for="contactName">

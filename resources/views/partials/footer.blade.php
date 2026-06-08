@@ -2,6 +2,7 @@
     <div class="container footer-grid">
         <div class="footer-about">
             <h3>BIOTRA</h3>
+            <p class="footer-pt-name">PT Dwimuria Investama Properti</p>
             <p>
                 BIOTRA adalah program kemitraan modern di sektor properti,
                 pariwisata, dan mobilitas yang dirancang untuk membantu mitra
@@ -22,9 +23,9 @@
         <div class="footer-column">
             <h4>Kontak</h4>
             <ul>
-                <li>WhatsApp: +123-456-7890</li>
+                <li><a href="https://wa.me/6285188341022" target="_blank" rel="noopener noreferrer">WhatsApp: +62-851-8834-1022</a></li>
                 <li>Email: hello@biotra.co.id</li>
-                <li>Website: www.biotra.co.id</li>
+                <li>Website: https://biotra.id/</li>
             </ul>
         </div>
 
@@ -33,7 +34,7 @@
             <p>
                 Tertarik mengetahui program kemitraan BIOTRA?
             </p>
-            <a href="#" class="btn-footer">Konsultasi Sekarang</a>
+            <a href="{{ route('contact') }}" class="btn-footer">Konsultasi Sekarang</a>
         </div>
     </div>
 

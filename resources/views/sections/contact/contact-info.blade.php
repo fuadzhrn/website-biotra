@@ -18,7 +18,7 @@
             </p>
 
             <div class="contact-info-actions">
-                <a href="{{ content_value('contact', 'contact_info', 'whatsapp_button_link', 'https://wa.me/6281234567890') }}"
+                <a href="{{ content_value('contact', 'contact_info', 'whatsapp_button_link', 'https://wa.me/6285188341022') }}"
                    target="_blank" class="contact-whatsapp-button">
                     <i class="bi bi-whatsapp"></i>
                     {{ content_value('contact', 'contact_info', 'whatsapp_button_text', 'Hubungi via WhatsApp') }}
@@ -49,7 +49,7 @@
                         </div>
                         <div>
                             <h4>{{ content_value('contact', 'contact_panel', 'whatsapp_title', 'WhatsApp') }}</h4>
-                            <strong>{{ content_value('contact', 'contact_panel', 'whatsapp_value', '+62 812-3456-7890') }}</strong>
+                            <strong>{{ content_value('contact', 'contact_panel', 'whatsapp_value', '+62-851-8834-1022') }}</strong>
                             <p>{{ content_value('contact', 'contact_panel', 'whatsapp_description', 'Konsultasi program dan layanan BIOTRA') }}</p>
                         </div>
                     </div>

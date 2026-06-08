@@ -29,11 +29,7 @@ $units = [
         'description' => 'Kendaraan keluarga yang nyaman untuk perjalanan wisata, kebutuhan bisnis, dan transportasi harian dengan kapasitas penumpang optimal dan interior yang lapang.',
         'features'    => ['7 Penumpang', 'AC dingin', 'Cocok wisata', 'Harian & mingguan'],
         'main_image'  => 'assets/img/product-details/rental/car-1-main.jpg',
-        'images'      => [
-            'assets/img/product-details/rental/car-1-1.jpg',
-            'assets/img/product-details/rental/car-1-2.jpg',
-            'assets/img/product-details/rental/car-1-3.jpg',
-        ],
+        'images'      => [],
     ],
     [
         'name'        => 'Toyota Innova',
@@ -42,11 +38,7 @@ $units = [
         'description' => 'Kendaraan premium dengan kapasitas lebih besar, cocok untuk perjalanan bisnis, wisata kelompok, dan kebutuhan transportasi eksekutif yang lebih nyaman.',
         'features'    => ['7–8 Penumpang', 'Premium & nyaman', 'Cocok bisnis', 'Harian & mingguan'],
         'main_image'  => 'assets/img/product-details/rental/car-2-main.jpg',
-        'images'      => [
-            'assets/img/product-details/rental/car-2-1.jpg',
-            'assets/img/product-details/rental/car-2-2.jpg',
-            'assets/img/product-details/rental/car-2-3.jpg',
-        ],
+        'images'      => [],
     ],
 ];
 @endphp

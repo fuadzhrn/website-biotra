@@ -7,6 +7,7 @@
                     src="{{ content_image('products_services', 'rental', 'main_image', 'assets/img/products-services/rental-main.jpg') }}"
                     alt="Rental kendaraan wisata dan bisnis dalam layanan BIOTRA"
                     loading="lazy"
+                    class="ps-gallery-trigger" data-group="gallery-rental" data-index="0"
                 >
 
                 <span class="gallery-badge">
@@ -20,6 +21,7 @@
                         src="{{ content_image('products_services', 'rental', 'image_1', 'assets/img/products-services/rental-1.jpg') }}"
                         alt="Interior kendaraan rental BIOTRA"
                         loading="lazy"
+                        class="ps-gallery-trigger" data-group="gallery-rental" data-index="1"
                     >
                 </div>
 
@@ -28,6 +30,7 @@
                         src="{{ content_image('products_services', 'rental', 'image_2', 'assets/img/products-services/rental-2.jpg') }}"
                         alt="Kendaraan untuk perjalanan wisata dan bisnis BIOTRA"
                         loading="lazy"
+                        class="ps-gallery-trigger" data-group="gallery-rental" data-index="2"
                     >
                 </div>
 
@@ -36,6 +39,7 @@
                         src="{{ content_image('products_services', 'rental', 'image_3', 'assets/img/products-services/rental-3.jpg') }}"
                         alt="Dokumentasi unit rental kendaraan BIOTRA"
                         loading="lazy"
+                        class="ps-gallery-trigger" data-group="gallery-rental" data-index="3"
                     >
                 </div>
             </div>

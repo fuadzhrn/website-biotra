@@ -29,11 +29,7 @@ $units = [
         'description' => 'Hotel modern di kawasan PIK 2 dengan fasilitas lengkap untuk kebutuhan perjalanan bisnis dan wisata. Lokasi strategis dekat pusat bisnis dan area hiburan.',
         'features'    => ['Kawasan PIK 2', 'Fasilitas modern', 'Dekat pusat bisnis', 'Cocok bisnis & wisata'],
         'main_image'  => 'assets/img/product-details/hotel/hotel-1-main.jpg',
-        'images'      => [
-            'assets/img/product-details/hotel/hotel-1-1.jpg',
-            'assets/img/product-details/hotel/hotel-1-2.jpg',
-            'assets/img/product-details/hotel/hotel-1-3.jpg',
-        ],
+        'images'      => [],
     ],
     [
         'name'        => 'Penginapan Jakarta',
@@ -42,11 +38,7 @@ $units = [
         'description' => 'Penginapan strategis di Jakarta untuk kebutuhan menginap jangka pendek dengan fasilitas standar yang nyaman dan lokasi yang mudah diakses.',
         'features'    => ['Area Jakarta', 'Lokasi strategis', 'Mudah diakses', 'Jangka pendek'],
         'main_image'  => 'assets/img/product-details/hotel/hotel-2-main.jpg',
-        'images'      => [
-            'assets/img/product-details/hotel/hotel-2-1.jpg',
-            'assets/img/product-details/hotel/hotel-2-2.jpg',
-            'assets/img/product-details/hotel/hotel-2-3.jpg',
-        ],
+        'images'      => [],
     ],
 ];
 @endphp

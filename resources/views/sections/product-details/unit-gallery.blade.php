@@ -9,7 +9,10 @@
 
         @foreach($units as $unit)
         @php
-            $slug = Str::slug($unit['name']);
+            $slug        = Str::slug($unit['name']);
+            $thumbCount  = count($unit['images']);
+            $visibleThumbs = array_slice($unit['images'], 0, 3);
+            $hiddenCount = max(0, $thumbCount - 3);
         @endphp
         <div class="unit-gallery-block" id="gallery-{{ $slug }}">
 
@@ -28,22 +31,40 @@
                 </a>
             </div>
 
-            <div class="unit-gallery-grid">
+            <div class="unit-gallery-grid {{ $thumbCount === 0 ? 'no-thumbs' : '' }}">
 
                 {{-- Main image --}}
                 <div class="unit-gallery-main">
-                    <img src="{{ asset($unit['main_image']) }}" alt="{{ $unit['name'] }}">
+                    <img src="{{ asset($unit['main_image']) }}"
+                         alt="{{ $unit['name'] }}"
+                         class="gallery-trigger"
+                         data-group="gallery-{{ $slug }}"
+                         data-index="0">
                     <div class="unit-gallery-main-badge">{{ $unit['name'] }}</div>
                 </div>
 
-                {{-- Thumbnails --}}
+                {{-- Thumbnails: hanya tampil jika ada gambar --}}
+                @if($thumbCount > 0)
                 <div class="unit-gallery-thumbs">
-                    @foreach($unit['images'] as $img)
+                    @foreach($visibleThumbs as $i => $img)
+                    @php $isLast = ($hiddenCount > 0 && $i === 2); @endphp
                     <div class="unit-gallery-thumb">
-                        <img src="{{ asset($img) }}" alt="{{ $unit['name'] }}" loading="lazy">
+                        <img src="{{ asset($img) }}"
+                             alt="{{ $unit['name'] }}"
+                             loading="lazy"
+                             class="gallery-trigger"
+                             data-group="gallery-{{ $slug }}"
+                             data-index="{{ $i + 1 }}">
+                        @if($isLast)
+                        <div class="thumb-more-overlay">
+                            <span>+{{ $hiddenCount }}</span>
+                            <small>foto lagi</small>
+                        </div>
+                        @endif
                     </div>
                     @endforeach
                 </div>
+                @endif
 
             </div>
 
