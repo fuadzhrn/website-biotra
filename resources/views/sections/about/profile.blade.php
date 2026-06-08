@@ -9,7 +9,7 @@
             </span>
 
             <h1>
-                {{ content_value('about', 'profile', 'title', 'Membuka Akses Bisnis Modern di Sektor Properti & Mobilitas') }}
+                {{ content_value('about', 'profile', 'title', 'Membuka Akses Bisnis Modern di Sektor Properti & Mobil Rental') }}
             </h1>
 
             <div class="about-profile-text">
@@ -18,7 +18,7 @@
                 </p>
 
                 <p>
-                    {{ content_value('about', 'profile', 'paragraph_2', 'Melalui sistem yang terarah, BIOTRA menghubungkan peluang di sektor akomodasi dan mobilitas dengan kebutuhan pasar yang terus berjalan, mulai dari penginapan, staycation, perjalanan bisnis, wisata, hingga kebutuhan transportasi.') }}
+                    {{ content_value('about', 'profile', 'paragraph_2', 'Melalui sistem yang terarah, BIOTRA menghubungkan peluang di sektor akomodasi dan Rental Mobil dengan kebutuhan pasar yang terus berjalan, mulai dari penginapan, staycation, perjalanan bisnis, wisata, hingga kebutuhan transportasi.') }}
                 </p>
             </div>
         </div>
@@ -27,7 +27,7 @@
             <div class="about-profile-slider">
                 <img
                     src="{{ content_image('about', 'profile', 'slide_1', 'assets/img/about-page/about-profile-1.jpg') }}"
-                    alt="Profil BIOTRA program kemitraan properti dan mobilitas"
+                    alt="Profil BIOTRA program kemitraan properti dan mobil rental"
                     class="about-slide active"
                 >
 
@@ -39,7 +39,7 @@
 
                 <img
                     src="{{ content_image('about', 'profile', 'slide_3', 'assets/img/about-page/about-profile-3.jpg') }}"
-                    alt="Properti dan mobilitas dalam ekosistem bisnis BIOTRA"
+                    alt="Properti dan mobil rental dalam ekosistem bisnis BIOTRA"
                     class="about-slide"
                 >
             </div>
@@ -55,7 +55,7 @@
                     <span>{{ content_value('about', 'profile', 'sector_3', 'Apartemen') }}</span>
                     <span>{{ content_value('about', 'profile', 'sector_4', 'Rental Kendaraan') }}</span>
                     <span>{{ content_value('about', 'profile', 'sector_5', 'Pariwisata') }}</span>
-                    <span>{{ content_value('about', 'profile', 'sector_6', 'Mobilitas') }}</span>
+                    <span>{{ content_value('about', 'profile', 'sector_6', 'Mobil Rental') }}</span>
                 </div>
             </div>
 
@@ -74,7 +74,7 @@
                     <i class="bi bi-car-front"></i>
                 </div>
                 <div>
-                    <h4>{{ content_value('about', 'profile', 'stat_2_title', 'Mobilitas') }}</h4>
+                    <h4>{{ content_value('about', 'profile', 'stat_2_title', 'Mobil Rental') }}</h4>
                     <p>{{ content_value('about', 'profile', 'stat_2_description', 'Rental kendaraan wisata dan bisnis') }}</p>
                 </div>
             </div>

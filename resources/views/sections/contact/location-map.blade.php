@@ -2,17 +2,15 @@
     <div class="container location-map-container">
         <div class="location-map-header">
             <span class="contact-section-label">
-                Lokasi BIOTRA
+                {{ content_value('contact', 'location_map', 'label', 'Lokasi BIOTRA') }}
             </span>
 
             <h2>
-                Temukan Lokasi dan Informasi Kunjungan BIOTRA
+                {{ content_value('contact', 'location_map', 'title', 'Temukan Lokasi dan Informasi Kunjungan BIOTRA') }}
             </h2>
 
             <p>
-                Untuk kebutuhan konsultasi langsung atau informasi lebih lanjut,
-                Anda dapat melihat lokasi BIOTRA melalui peta yang tersedia.
-                Informasi alamat dapat disesuaikan berdasarkan data resmi perusahaan.
+                {{ content_value('contact', 'location_map', 'description', 'Untuk kebutuhan konsultasi langsung atau informasi lebih lanjut, Anda dapat melihat lokasi BIOTRA melalui peta yang tersedia. Informasi alamat dapat disesuaikan berdasarkan data resmi perusahaan.') }}
             </p>
         </div>
 
@@ -23,31 +21,31 @@
                 </div>
 
                 <div class="location-address-content">
-                    <span>Alamat BIOTRA</span>
+                    <span>{{ content_value('contact', 'location_map', 'address_label', 'Alamat BIOTRA') }}</span>
 
                     <h3>
-                        Lokasi Kantor BIOTRA
+                        {{ content_value('contact', 'location_map', 'address_title', 'Lokasi Kantor BIOTRA') }}
                     </h3>
 
                     <p>
-                        Alamat kantor BIOTRA akan disesuaikan berdasarkan informasi
-                        resmi perusahaan.
+                        {{ content_value('contact', 'location_map', 'address', 'Alamat kantor BIOTRA akan disesuaikan berdasarkan informasi resmi perusahaan.') }}
                     </p>
 
                     <div class="location-info-list">
                         <div class="location-info-item">
                             <i class="bi bi-clock"></i>
-                            <span>Senin – Sabtu, 09.00 – 17.00 WIB</span>
+                            <span>{{ content_value('contact', 'location_map', 'service_hours', 'Senin – Sabtu, 09.00 – 17.00 WIB') }}</span>
                         </div>
 
                         <div class="location-info-item">
                             <i class="bi bi-chat-dots"></i>
-                            <span>Konfirmasi jadwal sebelum melakukan kunjungan</span>
+                            <span>{{ content_value('contact', 'location_map', 'visit_note', 'Konfirmasi jadwal sebelum melakukan kunjungan') }}</span>
                         </div>
                     </div>
 
-                    <a href="https://maps.google.com" target="_blank" class="location-map-button">
-                        Buka di Google Maps
+                    <a href="{{ content_value('contact', 'location_map', 'maps_button_link', 'https://maps.google.com') }}"
+                       target="_blank" class="location-map-button">
+                        {{ content_value('contact', 'location_map', 'maps_button_text', 'Buka di Google Maps') }}
                         <i class="bi bi-arrow-up-right"></i>
                     </a>
                 </div>
@@ -55,7 +53,7 @@
 
             <div class="google-map-box">
                 <iframe
-                    src="https://www.google.com/maps?q=Jakarta%20Indonesia&output=embed"
+                    src="{{ content_value('contact', 'location_map', 'maps_embed', 'https://www.google.com/maps?q=Jakarta%20Indonesia&output=embed') }}"
                     allowfullscreen=""
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">

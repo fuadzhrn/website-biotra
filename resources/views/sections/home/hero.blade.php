@@ -4,11 +4,11 @@
     <div class="container hero-container">
         <div class="hero-content">
             <span class="hero-label">
-                {{ content_value('home', 'hero', 'label', 'Program Kemitraan Properti & Mobilitas') }}
+                {{ content_value('home', 'hero', 'label', 'Program Kemitraan Properti & Mobil Rental') }}
             </span>
 
             <h1>
-                {{ content_value('home', 'hero', 'title', 'Punya Bisnis Tanpa Ribet di Sektor Properti & Mobilitas') }}
+                {{ content_value('home', 'hero', 'title', 'Punya Bisnis Tanpa Ribet di Sektor Properti & Mobil Rental') }}
             </h1>
 
             <p class="hero-description">

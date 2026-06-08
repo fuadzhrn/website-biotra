@@ -18,6 +18,7 @@
    @include('sections.contact.consultation-form')
    @include('sections.contact.location-map')
    @include('sections.contact.faq')
+   @include('sections.contact.cta')
 
 @endsection
 

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'BIOTRA - Program Kemitraan Properti & Mobilitas')
+@section('title', 'BIOTRA - Program Kemitraan Properti & Mobil Rental')
 @section('meta_description', 'BIOTRA adalah program kemitraan modern di sektor properti, penginapan, apartemen, rental kendaraan, pariwisata, dan mobilitas dengan sistem yang lebih praktis dan terkelola.')
 @section('meta_keywords', 'BIOTRA, program kemitraan, kemitraan properti, rental kendaraan, villa Bali, apartemen harian, penginapan, pariwisata, mobilitas')
 

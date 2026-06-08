@@ -45,7 +45,7 @@
 
                     <li>
                         <i class="bi bi-x-circle"></i>
-                        <span>{{ content_value('about', 'reason', 'problem_point_4', 'Tidak semua orang memiliki pengalaman di sektor properti dan mobilitas') }}</span>
+                        <span>{{ content_value('about', 'reason', 'problem_point_4', 'Tidak semua orang memiliki pengalaman di sektor properti dan mobil rental') }}</span>
                     </li>
                 </ul>
             </div>
@@ -69,7 +69,7 @@
                 <ul class="reason-list solution-list">
                     <li>
                         <i class="bi bi-check-circle"></i>
-                        <span>{{ content_value('about', 'reason', 'solution_point_1', 'Akses bisnis properti dan mobilitas') }}</span>
+                        <span>{{ content_value('about', 'reason', 'solution_point_1', 'Akses bisnis properti dan mobil rental') }}</span>
                     </li>
 
                     <li>
@@ -99,7 +99,7 @@
                 </h3>
 
                 <p>
-                    {{ content_value('about', 'reason', 'cta_description', 'Pelajari bagaimana sistem kemitraan BIOTRA dapat membantu Anda memiliki akses bisnis di sektor properti dan mobilitas dengan cara yang lebih praktis.') }}
+                    {{ content_value('about', 'reason', 'cta_description', 'Pelajari bagaimana sistem kemitraan BIOTRA dapat membantu Anda memiliki akses bisnis di sektor properti dan mobil rental dengan cara yang lebih praktis.') }}
                 </p>
             </div>
 

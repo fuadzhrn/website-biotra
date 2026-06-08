@@ -6,7 +6,7 @@
             </span>
 
             <h2>
-                {{ content_value('partnership', 'industry', 'title', 'Peluang Bisnis di Sektor Pariwisata, Akomodasi, dan Mobilitas') }}
+                {{ content_value('partnership', 'industry', 'title', 'Peluang Bisnis di Sektor Pariwisata, Akomodasi, dan Mobil Rental') }}
             </h2>
 
             <p>

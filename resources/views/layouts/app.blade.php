@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     {{-- SEO Basic --}}
-    <title>@yield('title', 'BIOTRA - Program Kemitraan Properti & Mobilitas')</title>
+    <title>@yield('title', 'BIOTRA - Program Kemitraan Properti & Mobil Rental')</title>
     <meta name="description" content="@yield('meta_description', 'BIOTRA adalah program kemitraan modern di sektor properti, pariwisata, penginapan, apartemen, rental kendaraan, dan mobilitas.')">
     <meta name="keywords" content="@yield('meta_keywords', 'BIOTRA, kemitraan properti, kemitraan bisnis, rental kendaraan, villa, apartemen, penginapan, pariwisata, mobilitas')">
     <meta name="author" content="BIOTRA">
 
     {{-- Open Graph untuk share WhatsApp / sosial media --}}
-    <meta property="og:title" content="@yield('og_title', 'BIOTRA - Program Kemitraan Properti & Mobilitas')">
+    <meta property="og:title" content="@yield('og_title', 'BIOTRA - Program Kemitraan Properti & Mobil Rental')">
     <meta property="og:description" content="@yield('og_description', 'Program kemitraan modern di sektor properti, pariwisata, dan mobilitas.')">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url()->current() }}">

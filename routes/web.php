@@ -6,12 +6,20 @@ use App\Http\Controllers\Admin\HomeContentController;
 use App\Http\Controllers\Admin\AboutContentController;
 use App\Http\Controllers\Admin\ProductsServicesContentController;
 use App\Http\Controllers\Admin\PartnershipContentController;
+use App\Http\Controllers\Admin\ContactContentController;
+use App\Http\Controllers\Admin\ProductCategoryController;
+use App\Http\Controllers\Admin\ProductUnitController;
+use App\Http\Controllers\Admin\ProductUnitImageController;
+use App\Http\Controllers\ProductDetailController;
+use App\Models\ProductCategory;
 
 Route::get('/', function () {
-    return view('pages.home');
+    $productCategories = ProductCategory::active()->orderBy('sort_order')->get();
+    return view('pages.home', compact('productCategories'));
 })->name('home');
 Route::get('/tentang-kami', function () {
-    return view('pages.about');
+    $productCategories = ProductCategory::active()->orderBy('sort_order')->get();
+    return view('pages.about', compact('productCategories'));
 })->name('about');
 Route::get('/produk-layanan', function () {
     return view('pages.products-services');
@@ -23,10 +31,7 @@ Route::get('/kontak', function () {
     return view('pages.contact');
 })->name('contact');
 
-Route::get('/produk-layanan/villa-staycation', fn () => view('pages.product-details.villa-staycation'))->name('product-details.villa');
-Route::get('/produk-layanan/hotel-penginapan', fn () => view('pages.product-details.hotel-penginapan'))->name('product-details.hotel');
-Route::get('/produk-layanan/apartemen',        fn () => view('pages.product-details.apartemen'))->name('product-details.apartment');
-Route::get('/produk-layanan/rental-kendaraan', fn () => view('pages.product-details.rental-kendaraan'))->name('product-details.rental');
+Route::get('/produk-layanan/{slug}', [ProductDetailController::class, 'show'])->name('product-details.show');
 
 
 Route::redirect('/login', '/admin/login');
@@ -48,14 +53,19 @@ Route::prefix('admin')->name('admin.')->middleware('admin.auth')->group(function
     Route::post('/contents/products-services', [ProductsServicesContentController::class, 'update'])->name('contents.products-services.update');
     Route::get('/contents/partnership',  [PartnershipContentController::class, 'index'])->name('contents.partnership');
     Route::post('/contents/partnership', [PartnershipContentController::class, 'update'])->name('contents.partnership.update');
-    Route::get('/contents/contact',             fn () => view('admin.contents.contact'))->name('contents.contact');
-    Route::get('/products',           fn () => view('admin.products.index'))->name('products.index');
-    Route::get('/products/villa',      fn () => view('admin.products.villa'))->name('products.villa');
-    Route::get('/products/hotel',      fn () => view('admin.products.hotel'))->name('products.hotel');
-    Route::get('/products/apartemen',  fn () => view('admin.products.apartemen'))->name('products.apartemen');
-    Route::get('/products/rental',     fn () => view('admin.products.rental'))->name('products.rental');
+    Route::get('/contents/contact',  [ContactContentController::class, 'index'])->name('contents.contact');
+    Route::post('/contents/contact', [ContactContentController::class, 'update'])->name('contents.contact.update');
 
-    Route::get('/faqs',                         fn () => view('admin.faqs.index'))->name('faqs.index');
-    Route::get('/media',                        fn () => view('admin.media.index'))->name('media.index');
-    Route::get('/messages',                     fn () => view('admin.messages.index'))->name('messages.index');
+    Route::resource('/products/categories', ProductCategoryController::class)
+        ->names('products.categories')
+        ->parameters(['categories' => 'category']);
+    Route::patch('/products/categories/{category}/toggle', [ProductCategoryController::class, 'toggle'])->name('products.categories.toggle');
+    Route::resource('/products/units', ProductUnitController::class)
+        ->names('products.units')
+        ->parameters(['units' => 'unit']);
+    Route::patch('/products/units/{unit}/toggle', [ProductUnitController::class, 'toggle'])->name('products.units.toggle');
+    Route::post('/products/units/{unit}/images', [ProductUnitImageController::class, 'store'])->name('products.units.images.store');
+    Route::patch('/products/images/{image}', [ProductUnitImageController::class, 'update'])->name('products.images.update');
+    Route::delete('/products/images/{image}', [ProductUnitImageController::class, 'destroy'])->name('products.images.destroy');
+
 });

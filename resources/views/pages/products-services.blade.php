@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Produk & Layanan BIOTRA - Properti, Akomodasi & Mobilitas')
+@section('title', 'Produk & Layanan BIOTRA - Properti, Akomodasi & Mobil Rental')
 @section('meta_description', 'Temukan produk dan layanan BIOTRA dalam sektor villa, hotel, apartemen, dan rental kendaraan untuk kebutuhan kemitraan properti, akomodasi, pariwisata, dan mobilitas.')
 @section('meta_keywords', 'produk BIOTRA, layanan BIOTRA, villa Bali, hotel Jakarta PIK 2, apartemen Bekasi Cikarang, rental kendaraan, kemitraan properti, mobilitas')
 

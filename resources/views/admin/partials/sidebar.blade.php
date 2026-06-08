@@ -56,52 +56,18 @@
         {{-- Kelola Produk --}}
         <div class="admin-menu-group">
             <div class="admin-menu-section">Kelola Produk</div>
-            <a href="{{ route('admin.products.index') }}"
-               class="admin-menu-link sub {{ request()->routeIs('admin.products.index') ? 'active' : '' }}">
+            <a href="{{ route('admin.products.categories.index') }}"
+               class="admin-menu-link sub {{ request()->routeIs('admin.products.categories.*') ? 'active' : '' }}">
                 <i class="bi bi-grid-3x3-gap"></i>
-                Semua Kategori
+                Kategori Produk
             </a>
-            <a href="{{ route('admin.products.villa') }}"
-               class="admin-menu-link sub {{ request()->routeIs('admin.products.villa') ? 'active' : '' }}">
-                <i class="bi bi-house-heart"></i>
-                Villa & Staycation
-            </a>
-            <a href="{{ route('admin.products.hotel') }}"
-               class="admin-menu-link sub {{ request()->routeIs('admin.products.hotel') ? 'active' : '' }}">
-                <i class="bi bi-building"></i>
-                Hotel & Penginapan
-            </a>
-            <a href="{{ route('admin.products.apartemen') }}"
-               class="admin-menu-link sub {{ request()->routeIs('admin.products.apartemen') ? 'active' : '' }}">
-                <i class="bi bi-buildings"></i>
-                Apartemen
-            </a>
-            <a href="{{ route('admin.products.rental') }}"
-               class="admin-menu-link sub {{ request()->routeIs('admin.products.rental') ? 'active' : '' }}">
-                <i class="bi bi-car-front"></i>
-                Rental Kendaraan
+            <a href="{{ route('admin.products.units.index') }}"
+               class="admin-menu-link sub {{ request()->routeIs('admin.products.units.*') ? 'active' : '' }}">
+                <i class="bi bi-box-seam"></i>
+                Unit Produk
             </a>
         </div>
 
-        {{-- Data Website --}}
-        <div class="admin-menu-group">
-            <div class="admin-menu-section">Data Website</div>
-            <a href="{{ route('admin.faqs.index') }}"
-               class="admin-menu-link sub {{ request()->routeIs('admin.faqs.index') ? 'active' : '' }}">
-                <i class="bi bi-question-circle"></i>
-                FAQ
-            </a>
-            <a href="{{ route('admin.media.index') }}"
-               class="admin-menu-link sub {{ request()->routeIs('admin.media.index') ? 'active' : '' }}">
-                <i class="bi bi-images"></i>
-                Media
-            </a>
-            <a href="{{ route('admin.messages.index') }}"
-               class="admin-menu-link sub {{ request()->routeIs('admin.messages.index') ? 'active' : '' }}">
-                <i class="bi bi-chat-left-dots"></i>
-                Pesan Konsultasi
-            </a>
-        </div>
 
     </nav>
 

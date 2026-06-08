@@ -17,7 +17,7 @@ $category = [
     'title'       => 'Pilihan Rental Kendaraan Wisata & Bisnis',
     'subtitle'    => 'Solusi mobilitas untuk perjalanan wisata, bisnis, dan transportasi harian.',
     'description' => 'Rental kendaraan BIOTRA mendukung kebutuhan perjalanan dan mobilitas dengan pilihan unit yang dapat disesuaikan dengan kebutuhan wisata, bisnis, maupun transportasi harian.',
-    'badge'       => 'Mobility',
+    'badge'       => 'Mobil Rental',
     'breadcrumb'  => 'Rental Kendaraan',
 ];
 

@@ -1,3 +1,9 @@
+@php
+    $activeSlugs = isset($productCategories)
+        ? $productCategories->pluck('slug')
+        : collect(['villa-staycation', 'hotel-penginapan', 'apartemen', 'rental-kendaraan']);
+@endphp
+
 <section class="operational-area-section">
     <div class="container operational-area-container">
         <div class="area-header">
@@ -15,6 +21,7 @@
         </div>
 
         <div class="area-showcase-grid">
+            @if($activeSlugs->contains('villa-staycation'))
             <a class="area-panel"
                href="https://www.google.com/maps/search/Bali,+Indonesia"
                target="_blank" rel="noopener noreferrer">
@@ -39,7 +46,9 @@
                     </p>
                 </div>
             </a>
+            @endif
 
+            @if($activeSlugs->contains('hotel-penginapan'))
             <a class="area-panel"
                href="https://www.google.com/maps/search/PIK+2+Jakarta+Utara"
                target="_blank" rel="noopener noreferrer">
@@ -64,7 +73,9 @@
                     </p>
                 </div>
             </a>
+            @endif
 
+            @if($activeSlugs->contains('apartemen'))
             <a class="area-panel"
                href="https://www.google.com/maps/search/Bekasi+Jawa+Barat"
                target="_blank" rel="noopener noreferrer">
@@ -89,7 +100,9 @@
                     </p>
                 </div>
             </a>
+            @endif
 
+            @if($activeSlugs->contains('rental-kendaraan'))
             <a class="area-panel"
                href="https://www.google.com/maps/search/Jakarta+Indonesia"
                target="_blank" rel="noopener noreferrer">
@@ -98,7 +111,7 @@
                      alt="Area operasional BIOTRA mobility rental kendaraan wisata dan bisnis">
                 <img class="area-panel-map"
                      src="{{ asset('assets/img/about-page/maps/map-mobility.jpg') }}"
-                     alt="Peta Area Operasional Mobility" loading="lazy"
+                     alt="Peta Area Operasional Mobil Rental" loading="lazy"
                      onerror="this.style.display='none'">
                 <div class="area-map-hint">
                     <i class="bi bi-map-fill"></i> Buka Maps
@@ -106,7 +119,7 @@
                 <div class="area-panel-overlay"></div>
                 <div class="area-panel-content">
                     <span class="area-location">
-                        {{ content_value('about', 'operational_area', 'area_4_location', 'Mobility') }}
+                        {{ content_value('about', 'operational_area', 'area_4_location', 'Mobil Rental') }}
                     </span>
                     <h3>{{ content_value('about', 'operational_area', 'area_4_title', 'Rental Kendaraan Wisata & Bisnis') }}</h3>
                     <p>
@@ -114,6 +127,7 @@
                     </p>
                 </div>
             </a>
+            @endif
         </div>
     </div>
 </section>

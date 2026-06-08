@@ -14,7 +14,7 @@
             </span>
 
             <h1>
-                {{ content_value('partnership', 'page_header', 'title', 'Mulai Akses Bisnis Properti dan Mobilitas dengan Sistem yang Lebih Praktis') }}
+                {{ content_value('partnership', 'page_header', 'title', 'Mulai Akses Bisnis Properti dan Mobil Rental dengan Sistem yang Lebih Praktis') }}
             </h1>
 
             <p>

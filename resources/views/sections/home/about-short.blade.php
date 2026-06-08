@@ -8,7 +8,7 @@
                 <div class="about-experience-card">
                     <span>BIOTRA</span>
                     <h4>Kemitraan Modern</h4>
-                    <p>Properti • Pariwisata • Mobilitas</p>
+                    <p>Properti • Pariwisata • Mobil Rental</p>
                 </div>
             </div>
         </div>
@@ -19,7 +19,7 @@
             </span>
 
             <h2>
-                {{ content_value('home', 'about_short', 'title', 'Program Kemitraan Modern untuk Properti, Pariwisata, dan Mobilitas') }}
+                {{ content_value('home', 'about_short', 'title', 'Program Kemitraan Modern untuk Properti, Pariwisata, dan Mobil Rental') }}
             </h2>
 
             <p class="about-description">

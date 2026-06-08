@@ -10,7 +10,7 @@
                 >
 
                 <span class="gallery-badge">
-                    {{ content_value('products_services', 'rental', 'location_badge', 'Mobility') }}
+                    {{ content_value('products_services', 'rental', 'location_badge', 'Mobil Rental') }}
                 </span>
             </div>
 
@@ -47,7 +47,7 @@
             </span>
 
             <h2>
-                {{ content_value('products_services', 'rental', 'title', 'Solusi Mobilitas untuk Perjalanan Wisata, Bisnis, dan Transportasi Harian') }}
+                {{ content_value('products_services', 'rental', 'title', 'Solusi Mobil Rental untuk Perjalanan Wisata, Bisnis, dan Transportasi Harian') }}
             </h2>
 
             <p class="service-description">

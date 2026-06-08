@@ -14,7 +14,7 @@
             </span>
 
             <h1>
-                {{ content_value('products_services', 'page_header', 'title', 'Akses Bisnis Properti, Akomodasi, dan Mobilitas dalam Satu Ekosistem') }}
+                {{ content_value('products_services', 'page_header', 'title', 'Akses Bisnis Properti, Akomodasi, dan Mobil Rental dalam Satu Ekosistem') }}
             </h1>
 
             <p>
