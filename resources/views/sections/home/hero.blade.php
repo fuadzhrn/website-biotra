@@ -8,7 +8,7 @@
             </span>
 
             <h1>
-                {{ content_value('home', 'hero', 'title', 'Punya Bisnis Tanpa Ribet di Sektor Properti & Mobil Rental') }}
+                {{ content_value('home', 'hero', 'title', 'Punya Bisnis Tanpa Ribet') }}
             </h1>
 
             <p class="hero-description">
@@ -16,16 +16,17 @@
             </p>
 
             <div class="hero-badges">
-                <span class="hero-badge-highlight">
-                    <i class="bi bi-shield-fill"></i>
-                    Hak Pakai Gratis + Hak Sewa
-                </span>
+                <button class="hero-badge-highlight" id="businessModelBtn" type="button" aria-haspopup="dialog">
+                    <i class="bi bi-diagram-3-fill"></i>
+                    Model Bisnis Biotra
+                    <i class="bi bi-chevron-right hero-badge-arrow"></i>
+                </button>
             </div>
 
             <div class="hero-actions">
-                <a href="{{ content_value('home', 'hero', 'primary_button_link', route('contact')) }}"
+                <a href="{{ content_value('home', 'hero', 'primary_button_link', route('contact') . '#consultation-form') }}"
                    class="btn-primary">
-                    {{ content_value('home', 'hero', 'primary_button_text', 'Konsultasi Sekarang') }}
+                    {{ content_value('home', 'hero', 'primary_button_text', 'Daftar Sekarang') }}
                     <i class="bi bi-arrow-right"></i>
                 </a>
 
@@ -64,3 +65,61 @@
         </div>
     </div>
 </section>
+
+{{-- Modal Model Bisnis --}}
+<div class="bm-overlay" id="businessModelOverlay" role="dialog" aria-modal="true" aria-labelledby="bmModalTitle">
+    <div class="bm-modal">
+        <div class="bm-modal-header">
+            <h3 id="bmModalTitle">
+                <i class="bi bi-diagram-3-fill"></i>
+                Model Bisnis Biotra
+            </h3>
+            <button class="bm-modal-close" id="businessModelClose" type="button" aria-label="Tutup">
+                <i class="bi bi-x-lg"></i>
+            </button>
+        </div>
+
+        <div class="bm-modal-body">
+            <div class="bm-point">
+                <div class="bm-point-header">
+                    <span class="bm-point-icon"><i class="bi bi-house-check-fill"></i></span>
+                    <h4>Hak Pakai</h4>
+                </div>
+                <ul class="bm-point-list">
+                    <li><i class="bi bi-check2"></i> Hak pakai unit gratis</li>
+                    <li><i class="bi bi-check2"></i> Diskon sampai 60% sepanjang tahun</li>
+                </ul>
+            </div>
+
+            <div class="bm-point">
+                <div class="bm-point-header">
+                    <span class="bm-point-icon"><i class="bi bi-currency-dollar"></i></span>
+                    <h4>Hak Monetisasi</h4>
+                </div>
+                <ul class="bm-point-list">
+                    <li><i class="bi bi-check2"></i> Bisa disewakan</li>
+                    <li><i class="bi bi-check2"></i> Sistem dikelola Biotra</li>
+                    <li><i class="bi bi-check2"></i> Bagi hasil 60% ke mitra</li>
+                </ul>
+            </div>
+
+            <div class="bm-point">
+                <div class="bm-point-header">
+                    <span class="bm-point-icon"><i class="bi bi-gear-fill"></i></span>
+                    <h4>Tanpa Ribet Operasional</h4>
+                </div>
+                <ul class="bm-point-list">
+                    <li><i class="bi bi-check2"></i> Tidak perlu urus driver</li>
+                    <li><i class="bi bi-check2"></i> Tidak perlu urus operasional</li>
+                    <li><i class="bi bi-check2"></i> Tidak perlu maintenance</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bm-modal-footer">
+            <a href="{{ route('contact') }}#consultation-form" class="bm-cta-btn">
+                Daftar Sekarang <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</div>

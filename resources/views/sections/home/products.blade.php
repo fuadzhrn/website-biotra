@@ -1,9 +1,10 @@
 @php
+    // Key merujuk ke content_image('about', 'operational_area', ...) agar sinkron dengan halaman Tentang Kami
     $imageMap = [
-        'villa-staycation' => 'assets/img/products/villa.jpg',
-        'hotel-penginapan' => 'assets/img/products/hotel.jpg',
-        'apartemen'        => 'assets/img/products/apartment.jpg',
-        'rental-kendaraan' => 'assets/img/products/rental-car.jpg',
+        'villa-staycation' => ['key' => 'area_1_image', 'fallback' => 'assets/img/about-page/area-bali.jpg'],
+        'hotel-penginapan' => ['key' => 'area_2_image', 'fallback' => 'assets/img/about-page/area-jakarta.jpg'],
+        'apartemen'        => ['key' => 'area_3_image', 'fallback' => 'assets/img/about-page/area-bekasi.jpg'],
+        'rental-kendaraan' => ['key' => 'area_4_image', 'fallback' => 'assets/img/about-page/area-mobility.jpg'],
     ];
     $iconMap = [
         'villa-staycation' => 'bi-house-heart',
@@ -33,12 +34,12 @@
             @if(isset($productCategories) && $productCategories->isNotEmpty())
                 @foreach($productCategories as $cat)
                 @php
-                    $img  = $imageMap[$cat->slug] ?? 'assets/img/products/villa.jpg';
-                    $icon = $iconMap[$cat->slug]  ?? 'bi-grid';
+                    $imgEntry    = $imageMap[$cat->slug] ?? ['key' => 'area_1_image', 'fallback' => 'assets/img/about-page/area-bali.jpg'];
+                    $icon        = $iconMap[$cat->slug]  ?? 'bi-grid';
                 @endphp
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="{{ asset($img) }}" alt="{{ $cat->name }}">
+                        <img src="{{ content_image('about', 'operational_area', $imgEntry['key'], $imgEntry['fallback']) }}" alt="{{ $cat->name }}">
                         <span class="product-location">{{ $cat->badge }}</span>
                     </div>
 
@@ -62,7 +63,7 @@
                 {{-- Fallback static jika DB belum ter-seed --}}
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="{{ asset('assets/img/products/villa.jpg') }}" alt="Villa & Staycation Bali">
+                        <img src="{{ content_image('about', 'operational_area', 'area_1_image', 'assets/img/about-page/area-bali.jpg') }}" alt="Villa & Staycation Bali">
                         <span class="product-location">Bali</span>
                     </div>
                     <div class="product-content">
@@ -77,7 +78,7 @@
 
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="{{ asset('assets/img/products/hotel.jpg') }}" alt="Hotel & Penginapan Jakarta PIK 2">
+                        <img src="{{ content_image('about', 'operational_area', 'area_2_image', 'assets/img/about-page/area-jakarta.jpg') }}" alt="Hotel & Penginapan Jakarta PIK 2">
                         <span class="product-location">Jakarta / PIK 2</span>
                     </div>
                     <div class="product-content">
@@ -92,7 +93,7 @@
 
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="{{ asset('assets/img/products/apartment.jpg') }}" alt="Apartemen Harian dan Mingguan">
+                        <img src="{{ content_image('about', 'operational_area', 'area_3_image', 'assets/img/about-page/area-bekasi.jpg') }}" alt="Apartemen Harian dan Mingguan">
                         <span class="product-location">Bekasi & Cikarang</span>
                     </div>
                     <div class="product-content">
@@ -107,7 +108,7 @@
 
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="{{ asset('assets/img/products/rental-car.jpg') }}" alt="Rental Kendaraan Wisata dan Bisnis">
+                        <img src="{{ content_image('about', 'operational_area', 'area_4_image', 'assets/img/about-page/area-mobility.jpg') }}" alt="Rental Kendaraan Wisata dan Bisnis">
                         <span class="product-location">Mobil Rental</span>
                     </div>
                     <div class="product-content">

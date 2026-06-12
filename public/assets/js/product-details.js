@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // LIGHTBOX
     // ===========================
 
-    // Build lightbox HTML
     var lb = document.createElement('div');
     lb.id  = 'gallery-lightbox';
     lb.innerHTML = [
@@ -60,8 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function render() {
         lbImg.style.opacity = '0';
         var src = images[currentIndex].src;
-        var alt = images[currentIndex].alt;
-        // Fade in setelah src diganti
+        var alt = images[currentIndex].alt || '';
         setTimeout(function () {
             lbImg.src = src;
             lbImg.alt = alt;
@@ -72,31 +70,82 @@ document.addEventListener('DOMContentLoaded', function () {
         lbNext.classList.toggle('lb-hidden', currentIndex === images.length - 1);
     }
 
-    // Klik pada gambar gallery
-    document.querySelectorAll('.gallery-trigger').forEach(function (img) {
-        img.addEventListener('click', function () {
-            var group    = this.dataset.group;
-            var startIdx = parseInt(this.dataset.index, 10);
-            var allImgs  = Array.from(
-                document.querySelectorAll('.gallery-trigger[data-group="' + group + '"]')
-            ).map(function (el) {
-                return { src: el.src, alt: el.alt };
-            });
-            openLightbox(allImgs, startIdx);
+    function imagesFromFeatured(featuredEl) {
+        try {
+            var urls = JSON.parse(featuredEl.dataset.images || '[]');
+            return urls.map(function (src) { return { src: src, alt: '' }; });
+        } catch (e) {
+            return [];
+        }
+    }
+
+    // ===========================
+    // FEATURED IMAGE — klik → lightbox
+    // ===========================
+
+    document.querySelectorAll('.unit-gallery-featured').forEach(function (featured) {
+        featured.addEventListener('click', function (e) {
+            if (e.target.closest('.gallery-view-all-btn')) return;
+            var imgs = imagesFromFeatured(this);
+            if (!imgs.length) return;
+            var idx = parseInt(this.querySelector('.featured-main-img').dataset.currentIndex || '0', 10);
+            openLightbox(imgs, idx);
         });
     });
 
-    // Tombol close
+    // ===========================
+    // "LIHAT SEMUA" BUTTON → lightbox index 0
+    // ===========================
+
+    document.querySelectorAll('.gallery-view-all-btn').forEach(function (btn) {
+        btn.addEventListener('click', function (e) {
+            e.stopPropagation();
+            var slug     = this.dataset.slug;
+            var featured = document.querySelector('.unit-gallery-featured[data-slug="' + slug + '"]');
+            if (!featured) return;
+            var imgs = imagesFromFeatured(featured);
+            if (!imgs.length) return;
+            openLightbox(imgs, 0);
+        });
+    });
+
+    // ===========================
+    // STRIP THUMBNAIL — klik → ganti featured
+    // ===========================
+
+    document.querySelectorAll('.strip-item').forEach(function (item) {
+        item.addEventListener('click', function () {
+            var slug = this.dataset.slug;
+            var src  = this.dataset.src;
+            var idx  = parseInt(this.dataset.index, 10);
+
+            var featuredImg = document.getElementById('featured-' + slug);
+            if (featuredImg) {
+                featuredImg.src = src;
+                featuredImg.dataset.currentIndex = idx;
+            }
+
+            document.querySelectorAll('.strip-item[data-slug="' + slug + '"]').forEach(function (el) {
+                el.classList.remove('active');
+            });
+            this.classList.add('active');
+
+            this.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+        });
+    });
+
+    // ===========================
+    // LIGHTBOX CONTROLS
+    // ===========================
+
     lbClose.addEventListener('click', closeLightbox);
 
-    // Klik overlay untuk menutup
     lb.addEventListener('click', function (e) {
         if (e.target === lb || e.target === lb.querySelector('.lightbox-img-wrap')) {
             closeLightbox();
         }
     });
 
-    // Prev / Next
     lbPrev.addEventListener('click', function () {
         if (currentIndex > 0) goTo(currentIndex - 1);
     });
@@ -105,15 +154,13 @@ document.addEventListener('DOMContentLoaded', function () {
         if (currentIndex < images.length - 1) goTo(currentIndex + 1);
     });
 
-    // Keyboard: ESC tutup, ← → navigasi
     document.addEventListener('keydown', function (e) {
         if (!lb.classList.contains('active')) return;
         if (e.key === 'Escape') closeLightbox();
-        if (e.key === 'ArrowLeft'  && currentIndex > 0)              goTo(currentIndex - 1);
+        if (e.key === 'ArrowLeft'  && currentIndex > 0)               goTo(currentIndex - 1);
         if (e.key === 'ArrowRight' && currentIndex < images.length - 1) goTo(currentIndex + 1);
     });
 
-    // Swipe touch support
     var touchStartX = 0;
     lb.addEventListener('touchstart', function (e) {
         touchStartX = e.changedTouches[0].screenX;

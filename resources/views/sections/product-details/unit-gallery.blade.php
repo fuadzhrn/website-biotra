@@ -9,10 +9,10 @@
 
         @foreach($units as $unit)
         @php
-            $slug        = Str::slug($unit['name']);
-            $thumbCount  = count($unit['images']);
-            $visibleThumbs = array_slice($unit['images'], 0, 3);
-            $hiddenCount = max(0, $thumbCount - 3);
+            $slug         = Str::slug($unit['name']);
+            $allImages    = array_merge([$unit['main_image']], $unit['images']);
+            $total        = count($allImages);
+            $allImageUrls = array_map(fn($img) => asset($img), $allImages);
         @endphp
         <div class="unit-gallery-block" id="gallery-{{ $slug }}">
 
@@ -31,42 +31,39 @@
                 </a>
             </div>
 
-            <div class="unit-gallery-grid {{ $thumbCount === 0 ? 'no-thumbs' : '' }}">
-
-                {{-- Main image --}}
-                <div class="unit-gallery-main">
-                    <img src="{{ asset($unit['main_image']) }}"
-                         alt="{{ $unit['name'] }}"
-                         class="gallery-trigger"
-                         data-group="gallery-{{ $slug }}"
-                         data-index="0">
-                    <div class="unit-gallery-main-badge">{{ $unit['name'] }}</div>
-                </div>
-
-                {{-- Thumbnails: hanya tampil jika ada gambar --}}
-                @if($thumbCount > 0)
-                <div class="unit-gallery-thumbs">
-                    @foreach($visibleThumbs as $i => $img)
-                    @php $isLast = ($hiddenCount > 0 && $i === 2); @endphp
-                    <div class="unit-gallery-thumb">
-                        <img src="{{ asset($img) }}"
-                             alt="{{ $unit['name'] }}"
-                             loading="lazy"
-                             class="gallery-trigger"
-                             data-group="gallery-{{ $slug }}"
-                             data-index="{{ $i + 1 }}">
-                        @if($isLast)
-                        <div class="thumb-more-overlay">
-                            <span>+{{ $hiddenCount }}</span>
-                            <small>foto lagi</small>
-                        </div>
-                        @endif
-                    </div>
-                    @endforeach
-                </div>
+            {{-- Featured image --}}
+            <div class="unit-gallery-featured"
+                 data-slug="{{ $slug }}"
+                 data-images="{{ e(json_encode(array_values($allImageUrls))) }}">
+                <img src="{{ asset($unit['main_image']) }}"
+                     alt="{{ $unit['name'] }}"
+                     class="featured-main-img"
+                     id="featured-{{ $slug }}"
+                     data-current-index="0">
+                <div class="unit-gallery-main-badge">{{ $unit['name'] }}</div>
+                @if($total > 1)
+                <button class="gallery-view-all-btn" data-slug="{{ $slug }}" type="button">
+                    <i class="bi bi-grid-3x3-gap-fill"></i>
+                    Lihat semua {{ $total }} foto
+                </button>
                 @endif
-
             </div>
+
+            {{-- Thumbnail strip: hanya tampil jika ada gambar tambahan --}}
+            @if($total > 1)
+            <div class="unit-gallery-strip" data-slug="{{ $slug }}">
+                @foreach($allImages as $i => $img)
+                <div class="strip-item {{ $i === 0 ? 'active' : '' }}"
+                     data-slug="{{ $slug }}"
+                     data-src="{{ asset($img) }}"
+                     data-index="{{ $i }}">
+                    <img src="{{ asset($img) }}"
+                         alt="{{ $unit['name'] }} foto {{ $i + 1 }}"
+                         loading="{{ $i === 0 ? 'eager' : 'lazy' }}">
+                </div>
+                @endforeach
+            </div>
+            @endif
 
         </div>
         @endforeach

@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const email    = document.getElementById('contactEmail').value.trim();
             const message  = document.getElementById('contactMessage').value.trim();
 
-            const adminPhoneNumber = consultationForm.dataset.whatsappTarget || '6281234567890';
+            const adminPhoneNumber = consultationForm.dataset.whatsappTarget || '6285188341022';
 
             const whatsappMessage = `Halo BIOTRA, saya ingin konsultasi.
 

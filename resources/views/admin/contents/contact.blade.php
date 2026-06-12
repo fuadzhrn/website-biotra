@@ -104,7 +104,7 @@ function cv($content, $section, $key) {
                 <label class="admin-form-label">Link Tombol WhatsApp</label>
                 <input type="text" name="contact_info_whatsapp_button_link" class="admin-form-input"
                        value="{{ cv($content, 'contact_info', 'whatsapp_button_link') }}"
-                       placeholder="https://wa.me/6281234567890">
+                       placeholder="https://wa.me/6285188341022">
             </div>
         </div>
         <div class="admin-form-row">
@@ -168,7 +168,7 @@ function cv($content, $section, $key) {
                 <label class="admin-form-label">Nilai (nomor)</label>
                 <input type="text" name="contact_panel_whatsapp_value" class="admin-form-input"
                        value="{{ cv($content, 'contact_panel', 'whatsapp_value') }}"
-                       placeholder="+62 812-3456-7890">
+                       placeholder="+62-851-8834-1022">
             </div>
         </div>
         <div class="admin-form-group">
@@ -313,7 +313,7 @@ function cv($content, $section, $key) {
                 <label class="admin-form-label">Placeholder: WhatsApp</label>
                 <input type="text" name="consultation_form_whatsapp_placeholder" class="admin-form-input"
                        value="{{ cv($content, 'consultation_form', 'whatsapp_placeholder') }}"
-                       placeholder="Contoh: 0812-3456-7890">
+                       placeholder="Contoh: 0851-8834-1022">
             </div>
         </div>
         <div class="admin-form-row">
@@ -378,7 +378,7 @@ function cv($content, $section, $key) {
                 <label class="admin-form-label">Nomor WhatsApp Tujuan <small>(tanpa +, cth: 6281234567890)</small></label>
                 <input type="text" name="consultation_form_whatsapp_target_number" class="admin-form-input"
                        value="{{ cv($content, 'consultation_form', 'whatsapp_target_number') }}"
-                       placeholder="6281234567890">
+                       placeholder="6285188341022">
                 <div class="admin-form-hint">Nomor ini digunakan sebagai tujuan pengiriman pesan konsultasi via WhatsApp.</div>
             </div>
         </div>
@@ -589,7 +589,7 @@ function cv($content, $section, $key) {
                 <label class="admin-form-label">Link Tombol</label>
                 <input type="text" name="faq_intro_button_link" class="admin-form-input"
                        value="{{ cv($content, 'faq', 'intro_button_link') }}"
-                       placeholder="https://wa.me/6281234567890"
+                       placeholder="https://wa.me/6285188341022"
                        style="margin-bottom:0;">
             </div>
         </div>
@@ -650,7 +650,7 @@ function cv($content, $section, $key) {
                 <label class="admin-form-label">Link Tombol</label>
                 <input type="text" name="cta_button_link" class="admin-form-input"
                        value="{{ cv($content, 'cta', 'button_link') }}"
-                       placeholder="https://wa.me/6281234567890">
+                       placeholder="https://wa.me/6285188341022">
             </div>
         </div>
     </div>
