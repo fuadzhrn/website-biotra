@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\PageContent;
+use App\Models\ConsultationPromo;
 use Illuminate\Http\Request;
 
 class ContactContentController extends Controller
@@ -15,7 +16,8 @@ class ContactContentController extends Controller
         foreach ($records as $record) {
             $content[$record->section][$record->key] = $record;
         }
-        return view('admin.contents.contact', compact('content'));
+        $promos = ConsultationPromo::orderBy('sort_order')->get();
+        return view('admin.contents.contact', compact('content', 'promos'));
     }
 
     public function update(Request $request)

@@ -631,50 +631,81 @@
     line-height: 1.6;
 }
 
-/* Promo Banner */
+/* Promo Radio List */
 
-.consultation-promo-banner {
-    display: flex;
-    align-items: flex-start;
-    gap: 14px;
-    padding: 16px 20px;
-    border-radius: 14px;
-    background: linear-gradient(135deg, rgba(214, 164, 58, 0.12) 0%, rgba(214, 164, 58, 0.06) 100%);
-    border: 1.5px solid rgba(214, 164, 58, 0.45);
-    height: 100%;
-    box-sizing: border-box;
+.promo-label-opt {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--text-muted);
 }
 
-.consultation-promo-icon {
-    flex: 0 0 auto;
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
-    background: linear-gradient(135deg, var(--gold), #c49230);
+.promo-radio-list {
+    display: flex;
+    flex-direction: column;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 12px;
+    overflow: hidden;
+    max-height: 220px;
+    overflow-y: auto;
+}
+
+.promo-radio-item {
     display: flex;
     align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 18px;
+    gap: 12px;
+    padding: 11px 14px;
+    cursor: pointer;
+    border-bottom: 1px solid #f1f5f9;
+    background: #fff;
+    transition: background 0.15s;
 }
 
-.consultation-promo-content {
-    flex: 1;
+.promo-radio-item:last-child {
+    border-bottom: none;
 }
 
-.consultation-promo-content strong {
-    display: block;
-    color: var(--navy);
-    font-size: 15px;
-    font-weight: 700;
-    margin-bottom: 5px;
+.promo-radio-item:hover {
+    background: #f8fafc;
 }
 
-.consultation-promo-content p {
-    color: var(--text-muted);
-    font-size: 13px;
-    line-height: 1.6;
+.promo-radio-item.promo-radio-checked,
+.promo-radio-item:has(input:checked) {
+    background: #f0fdf4;
+    border-bottom-color: #d1fae5;
+}
+
+.promo-radio-item input[type="radio"] {
+    flex-shrink: 0;
+    width: 15px;
+    height: 15px;
+    accent-color: #16a34a;
     margin: 0;
+}
+
+.promo-radio-item > span {
+    font-size: 13.5px;
+    color: var(--text-muted);
+}
+
+.promo-radio-item > div {
+    min-width: 0;
+}
+
+.promo-radio-item > div strong {
+    display: block;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 2px;
+}
+
+.promo-radio-item > div span {
+    font-size: 12px;
+    color: var(--text-muted);
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* Quick Help Panel */

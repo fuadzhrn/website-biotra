@@ -330,29 +330,6 @@ function cv($content, $section, $key) {
                        placeholder="Masukkan email Anda, opsional">
             </div>
         </div>
-        <div class="admin-form-group">
-            <label class="admin-form-label">Banner Promo</label>
-            <label style="display:flex;align-items:center;gap:8px;cursor:pointer;font-weight:normal;">
-                <input type="checkbox" name="consultation_form_promo_is_active" value="1"
-                       {{ cv($content, 'consultation_form', 'promo_is_active') ? 'checked' : '' }}>
-                Tampilkan banner promo di dalam form konsultasi
-            </label>
-            <div class="admin-form-hint">Jika dicentang, kotak promo akan tampil di samping field email dalam form.</div>
-        </div>
-        <div class="admin-form-row">
-            <div class="admin-form-group">
-                <label class="admin-form-label">Judul Promo</label>
-                <input type="text" name="consultation_form_promo_title" class="admin-form-input"
-                       value="{{ cv($content, 'consultation_form', 'promo_title') }}"
-                       placeholder="100 Orang Pertama">
-            </div>
-            <div class="admin-form-group">
-                <label class="admin-form-label">Deskripsi Promo</label>
-                <input type="text" name="consultation_form_promo_description" class="admin-form-input"
-                       value="{{ cv($content, 'consultation_form', 'promo_description') }}"
-                       placeholder="Dapatkan konsultasi eksklusif untuk 100 pendaftar pertama...">
-            </div>
-        </div>
         <div class="admin-form-row">
             <div class="admin-form-group">
                 <label class="admin-form-label">Label: Pesan</label>
@@ -665,5 +642,112 @@ function cv($content, $section, $key) {
 </div>
 
 </form>
+
+{{-- ===== DAFTAR PROMO (di luar form utama) ===== --}}
+<div class="admin-card" style="margin-top:0;">
+    <div class="admin-card-header">
+        <div>
+            <h2 class="admin-card-title"><i class="bi bi-gift"></i> Daftar Promo Konsultasi</h2>
+            <p class="admin-card-subtitle">Pilih satu promo yang aktif — banner akan tampil di form konsultasi user. Pilih "Tidak ada" untuk menyembunyikan banner.</p>
+        </div>
+    </div>
+    <div class="admin-card-body">
+        @if($promos->isEmpty())
+        <p style="font-size:13.5px;color:#9ca3af;font-style:italic;">Belum ada promo. Tambahkan promo baru di bawah.</p>
+        @else
+        <form action="{{ route('admin.consultation-promos.set-active') }}" method="POST">
+            @csrf
+            <p style="font-size:12.5px;color:#6b7280;margin:0 0 10px;">Centang promo yang ingin ditampilkan. Bisa lebih dari satu.</p>
+            {{-- Scrollable checkbox list --}}
+            <div id="promoSelectList" style="border:1.5px solid #e0e4ea;border-radius:10px;overflow:hidden;max-height:300px;overflow-y:auto;margin-bottom:14px;">
+                @foreach($promos as $promo)
+                @php
+                    $rowStyle = 'display:flex;align-items:stretch;'
+                        . (!$loop->last ? 'border-bottom:1px solid #f0f2f5;' : '')
+                        . ($promo->is_active ? 'background:#f0fff4;' : 'background:#fff;');
+                @endphp
+                <div style="{{ $rowStyle }}" id="promo-row-{{ $promo->id }}">
+                    <label style="display:flex;align-items:center;gap:12px;padding:11px 16px;cursor:pointer;flex:1;min-width:0;">
+                        <input type="checkbox" name="active_promo_ids[]" value="{{ $promo->id }}"
+                               @if($promo->is_active) checked @endif
+                               style="accent-color:#2a9d5c;width:15px;height:15px;flex-shrink:0;">
+                        <div style="min-width:0;">
+                            <div style="font-size:13.5px;font-weight:600;color:#1a2340;">{{ $promo->title }}</div>
+                            <div style="font-size:12px;color:#6b7280;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:380px;">{{ $promo->description }}</div>
+                        </div>
+                    </label>
+                    <button type="button"
+                            onclick="confirmDeletePromo({{ $promo->id }}, '{{ addslashes($promo->title) }}')"
+                            style="flex-shrink:0;padding:0 14px;background:none;border:none;border-left:1px solid #f0f2f5;color:#c0392b;cursor:pointer;font-size:14px;"
+                            title="Hapus promo ini">
+                        <i class="bi bi-trash"></i>
+                    </button>
+                </div>
+                @endforeach
+            </div>
+            <button type="submit" class="admin-button" style="gap:6px;">
+                <i class="bi bi-check-lg"></i> Terapkan Pilihan
+            </button>
+        </form>
+
+        {{-- Form hapus tersembunyi (diisi via JS) --}}
+        <form id="deletePromoForm" method="POST" style="display:none;">
+            @csrf
+        </form>
+        <script>
+        function confirmDeletePromo(id, title) {
+            if (!confirm('Hapus promo "' + title + '"?')) return;
+            var form = document.getElementById('deletePromoForm');
+            form.action = '{{ url("admin/consultation-promos") }}/' + id + '/destroy';
+            form.submit();
+        }
+        // Highlight row saat radio diklik
+        document.querySelectorAll('#promoSelectList input[type=radio]').forEach(function(radio) {
+            radio.addEventListener('change', function() {
+                document.querySelectorAll('#promoSelectList label, #promoSelectList [id^="promo-row-"], #promo-item-none').forEach(function(el) {
+                    el.style.background = '#fff';
+                });
+                var row = this.closest('[id^="promo-row-"]') || this.closest('label');
+                if (row) row.style.background = '#f0fff4';
+            });
+        });
+        </script>
+        @endif
+    </div>
+</div>
+
+{{-- Form Tambah Promo Baru (terpisah dari form utama) --}}
+<div class="admin-card" style="margin-top:0;">
+    <div class="admin-card-header">
+        <div>
+            <h2 class="admin-card-title"><i class="bi bi-plus-circle"></i> Tambah Promo Baru</h2>
+            <p class="admin-card-subtitle">Tambahkan promo baru ke dalam daftar. Aktifkan sesuai kebutuhan kapan saja.</p>
+        </div>
+    </div>
+    <div class="admin-card-body">
+        <form action="{{ route('admin.consultation-promos.store') }}" method="POST">
+            @csrf
+            <div class="admin-form-row">
+                <div class="admin-form-group">
+                    <label class="admin-form-label">Judul Promo <span style="color:#e87777;">*</span></label>
+                    <input type="text" name="title" class="admin-form-input @error('title') is-invalid @enderror"
+                           value="{{ old('title') }}"
+                           placeholder="Contoh: 100 Pendaftar Pertama">
+                    @error('title')<div class="admin-form-hint" style="color:#e87777;">{{ $message }}</div>@enderror
+                </div>
+                <div class="admin-form-group">
+                    <label class="admin-form-label">Deskripsi Promo <span style="color:#e87777;">*</span></label>
+                    <input type="text" name="description" class="admin-form-input @error('description') is-invalid @enderror"
+                           value="{{ old('description') }}"
+                           placeholder="Contoh: Dapatkan konsultasi eksklusif untuk 100 pendaftar pertama...">
+                    @error('description')<div class="admin-form-hint" style="color:#e87777;">{{ $message }}</div>@enderror
+                </div>
+            </div>
+            <button type="submit" class="admin-button-outline" style="gap:6px;">
+                <i class="bi bi-plus-lg"></i> Tambah ke Daftar
+            </button>
+        </form>
+    </div>
+</div>
 
 @endsection

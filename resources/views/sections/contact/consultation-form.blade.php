@@ -58,14 +58,27 @@
                         >
                     </div>
 
-                    @if(content_value('contact', 'consultation_form', 'promo_is_active', ''))
-                    <div class="consultation-promo-banner">
-                        <div class="consultation-promo-icon">
-                            <i class="bi bi-gift-fill"></i>
-                        </div>
-                        <div class="consultation-promo-content">
-                            <strong>{{ content_value('contact', 'consultation_form', 'promo_title', '100 Orang Pertama') }}</strong>
-                            <p>{{ content_value('contact', 'consultation_form', 'promo_description', 'Daftar sekarang dan dapatkan konsultasi eksklusif untuk 100 pendaftar pertama program kemitraan BIOTRA.') }}</p>
+                    @php $activePromos = \App\Models\ConsultationPromo::activePromos(); @endphp
+                    @if($activePromos->isNotEmpty())
+                    <div class="form-group">
+                        <label>Promo <span class="promo-label-opt">(opsional)</span></label>
+                        <div class="promo-radio-list" id="promoRadioList">
+                            <label class="promo-radio-item promo-radio-checked">
+                                <input type="radio" name="selected_promo" value="" checked>
+                                <span>Tidak menggunakan promo</span>
+                            </label>
+                            @foreach($activePromos as $promo)
+                            <label class="promo-radio-item">
+                                <input type="radio" name="selected_promo"
+                                       value="{{ $promo->id }}"
+                                       data-title="{{ $promo->title }}"
+                                       data-desc="{{ $promo->description }}">
+                                <div>
+                                    <strong>{{ $promo->title }}</strong>
+                                    <span>{{ $promo->description }}</span>
+                                </div>
+                            </label>
+                            @endforeach
                         </div>
                     </div>
                     @endif

@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\AboutContentController;
 use App\Http\Controllers\Admin\ProductsServicesContentController;
 use App\Http\Controllers\Admin\PartnershipContentController;
 use App\Http\Controllers\Admin\ContactContentController;
+use App\Http\Controllers\Admin\ConsultationPromoController;
 use App\Http\Controllers\Admin\ProductCategoryController;
 use App\Http\Controllers\Admin\ProductUnitController;
 use App\Http\Controllers\Admin\ProductUnitImageController;
@@ -55,6 +56,12 @@ Route::prefix('admin')->name('admin.')->middleware('admin.auth')->group(function
     Route::post('/contents/partnership', [PartnershipContentController::class, 'update'])->name('contents.partnership.update');
     Route::get('/contents/contact',  [ContactContentController::class, 'index'])->name('contents.contact');
     Route::post('/contents/contact', [ContactContentController::class, 'update'])->name('contents.contact.update');
+
+    Route::post('/consultation-promos',                         [ConsultationPromoController::class, 'store'])->name('consultation-promos.store');
+    Route::post('/consultation-promos/set-active',              [ConsultationPromoController::class, 'setActive'])->name('consultation-promos.set-active');
+    Route::post('/consultation-promos/{promo}/activate',        [ConsultationPromoController::class, 'activate'])->name('consultation-promos.activate');
+    Route::post('/consultation-promos/{promo}/deactivate',      [ConsultationPromoController::class, 'deactivate'])->name('consultation-promos.deactivate');
+    Route::post('/consultation-promos/{promo}/destroy',         [ConsultationPromoController::class, 'destroy'])->name('consultation-promos.destroy');
 
     Route::resource('/products/categories', ProductCategoryController::class)
         ->names('products.categories')

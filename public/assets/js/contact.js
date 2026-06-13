@@ -14,11 +14,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
             const adminPhoneNumber = consultationForm.dataset.whatsappTarget || '6285188341022';
 
+            const promoRadio = consultationForm.querySelector('input[name="selected_promo"]:checked');
+            const promoTitle = promoRadio && promoRadio.dataset.title ? promoRadio.dataset.title : null;
+
             const whatsappMessage = `Halo BIOTRA, saya ingin konsultasi.
 
 Nama: ${name}
 Nomor WhatsApp: ${whatsapp}
-Email: ${email || '-'}
+Email: ${email || '-'}${promoTitle ? '\nPromo: ' + promoTitle : ''}
 
 Pesan:
 ${message}`.trim();
